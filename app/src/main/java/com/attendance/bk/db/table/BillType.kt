@@ -9,9 +9,8 @@ import androidx.room.Index
 import androidx.room.PrimaryKey
 import com.attendance.bk.db.BkDb
 import com.attendance.bk.db.TableName
-import com.attendance.bk.utils.UUIDUtil
-import com.boss.bk.db.BILL_TYPE_IN
-import com.boss.bk.db.BILL_TYPE_OUT
+import com.attendance.bk.db.BILL_TYPE_IN
+import com.attendance.bk.db.BILL_TYPE_OUT
 
 /**
  * 一级分类收支类别
@@ -28,11 +27,14 @@ data class BillType(
     @ColumnInfo(name = "name")
     var name: String = "",
 
-    @ColumnInfo(name = "icon")
-    var icon: String = "",
+    @ColumnInfo(name = "click_icon")
+    var clickIcon: String = "",
 
-    @ColumnInfo(name = "color")
-    var color: String = "",
+    @ColumnInfo(name = "normal_icon")
+    var normalIcon: String = "",
+
+    @ColumnInfo(name = "book_id")
+    var bookId: String = "",
 
     @Type
     @ColumnInfo(name = "type")
@@ -72,6 +74,7 @@ data class BillType(
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
+        parcel.readString(),
         parcel.readInt(),
         parcel.readInt(),
         parcel.readString(),
@@ -85,8 +88,9 @@ data class BillType(
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(billId)
         parcel.writeString(name)
-        parcel.writeString(icon)
-        parcel.writeString(color)
+        parcel.writeString(clickIcon)
+        parcel.writeString(normalIcon)
+        parcel.writeString(bookId)
         parcel.writeInt(type)
         parcel.writeInt(orderNum)
         parcel.writeString(userId)

@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:minHeight="?attr/actionBarSize"
+    android:minHeight="@dimen/toolbar_height"
     android:background="@drawable/bg_toolbar">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="45dp"
+        android:minHeight="45dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_back_white"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/main_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
+        android:layout_centerInParent="true"
         android:singleLine="true"
         tools:text="标题"
         android:textColor="@color/white"
@@ -21,8 +29,10 @@
     <TextView
         android:id="@+id/sub_title"
         android:layout_width="wrap_content"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="@dimen/toolbar_height"
         android:layout_gravity="right"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
         android:gravity="center_vertical"
         tools:text="编辑"
         android:paddingRight="@dimen/left_right_margin"
@@ -30,5 +40,5 @@
         android:textColor="@color/white"
         android:textSize="@dimen/sub_title_text_size" />
 
-</androidx.appcompat.widget.Toolbar>
+</RelativeLayout>
 

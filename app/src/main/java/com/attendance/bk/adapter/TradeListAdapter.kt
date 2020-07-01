@@ -9,7 +9,7 @@ import com.attendance.bk.bean.TradeListData
 import com.attendance.bk.utils.BkUtil
 import com.attendance.bk.utils.DrawableUtil
 import com.attendance.bk.view.BkImageView
-import com.boss.bk.db.TRADE_TYPE_IN
+import com.attendance.bk.db.TRADE_TYPE_IN
 import com.chad.library.adapter.base.BaseMultiItemQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import java.util.*

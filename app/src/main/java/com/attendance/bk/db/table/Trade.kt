@@ -7,10 +7,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
-import com.attendance.bk.db.BkDb
-import com.attendance.bk.db.TableName
-import com.attendance.bk.utils.UUIDUtil
-import com.boss.bk.db.*
+import com.attendance.bk.db.*
 
 
 /**

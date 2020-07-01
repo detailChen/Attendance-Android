@@ -1,9 +1,13 @@
 package com.attendance.bk.http
 
 import com.attendance.bk.bean.LoginResult
+import com.attendance.bk.bean.net.TradeData
+import com.attendance.bk.db.table.BillType
+import com.attendance.bk.db.table.Trade
 import io.reactivex.Single
 import okhttp3.ResponseBody
 import retrofit2.Call
+import retrofit2.http.Body
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST
@@ -45,4 +49,36 @@ interface ApiService {
         @Field("userId") userId: String,
         @Field("lastVersion") lastVersion: Long
     ): Call<ResponseBody>
+
+
+
+    /**
+     * 添加交易
+     */
+    @POST("/trade/addTrade")
+    fun addTrade(@Body tradeData: TradeData): Single<ApiResult<TradeData>>
+
+    /**
+     * 修改交易
+     */
+    @POST("/trade/updateTrade")
+    fun updateTrade(@Body tradeData: TradeData): Single<ApiResult<TradeData>>
+
+    @POST("/trade/settlementTrade")
+    fun settlementTrade(@Body tradeData: TradeData): Single<ApiResult<TradeData>>
+
+    /**
+     * 删除交易流水
+     */
+    @POST("/trade/deleteTrade")
+    fun deleteTrade(@Body trade: Trade): Single<ApiResult<Trade>>
+
+    @POST("/billType/addBillType")
+    fun addBillType(@Body billType: BillType): Single<ApiResult<BillType>>
+
+    @POST("/billType/modifyBillType")
+    fun modifyBillType(@Body billType: BillType): Single<ApiResult<BillType>>
+
+    @POST("/billType/deleteBillType")
+    fun deleteBillType(@Body billType: BillType): Single<ApiResult<BillType>>
 }

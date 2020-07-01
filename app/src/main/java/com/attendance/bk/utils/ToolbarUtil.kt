@@ -1,15 +1,15 @@
 package com.attendance.bk.utils
 
 import android.annotation.SuppressLint
-import android.graphics.PorterDuff
 import android.view.View
+import android.widget.ImageView
+import android.widget.RelativeLayout
 import android.widget.TextView
-import androidx.appcompat.widget.Toolbar
-import androidx.core.content.ContextCompat
-import com.blankj.utilcode.util.BarUtils
-import com.attendance.bk.page.BaseActivity
 import com.attendance.bk.BkApp
 import com.attendance.bk.R
+import com.attendance.bk.page.BaseActivity
+import com.blankj.utilcode.util.BarUtils
+
 
 /**
  * Created by CXJ
@@ -18,23 +18,20 @@ import com.attendance.bk.R
 object ToolbarUtil {
 
     @SuppressLint("StaticFieldLeak")
-    private lateinit var mToolbar: Toolbar
+    private lateinit var mToolbar: RelativeLayout
 
 
     interface OnSubTitleClickListener {
         fun onSubTitleClick()
     }
 
-    fun setSupportToolbar(activity: BaseActivity, toolbar: Toolbar) {
+    fun setSupportToolbar(activity: BaseActivity, toolbar: RelativeLayout) {
         mToolbar = toolbar
-        activity.setSupportActionBar(toolbar)
-        toolbar.contentInsetStartWithNavigation = 0
-        toolbar.setTitleTextAppearance(activity, R.style.Toolbar_TitleText)
-        val actionBar = activity.supportActionBar ?: return
-        actionBar.setDisplayHomeAsUpEnabled(true)
-        activity.supportActionBar!!.title = ""
-        setBackArrowColor(ContextCompat.getColor(activity, R.color.white))
-        //        mToolbar.setNavigationIcon(R.drawable.ic_back);
+        val back = toolbar.findViewById<ImageView>(R.id.back)
+        back.setOnClickListener {
+            activity.onBackPressed()
+        }
+
     }
 
     fun setMainTitle(title: String) {
@@ -65,11 +62,6 @@ object ToolbarUtil {
     }
 
 
-    fun setBackArrowColor(color: Int) {
-        val backArrow = mToolbar.navigationIcon
-        backArrow!!.setColorFilter(color, PorterDuff.Mode.SRC_IN)
-        mToolbar.navigationIcon = backArrow
-    }
 
     fun setStatusBarTopPadding() {
         mToolbar.setPadding(0, BarUtils.getStatusBarHeight(), 0, 0)

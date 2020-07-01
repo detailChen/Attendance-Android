@@ -59,8 +59,8 @@ abstract class BillTypeDao {
      * @param userId
      * @return
      */
-    @Query("select * from tb_bill_type where user_id = :userId and type =:btType and operator_type != 2 order by order_num")
-    abstract fun getBtList(userId: String, btType: Int): Single<List<BillType>>
+    @Query("select * from tb_bill_type where user_id = :userId and and book_id = :bookId and type =:btType and operator_type != 2 order by order_num")
+    abstract fun getBookBtList(userId: String,bookId:String, btType: Int): Single<List<BillType>>
 
 
     @Query("select max(order_num) from tb_bill_type where user_id = :userId  and type =:btType  and operator_type != 2")

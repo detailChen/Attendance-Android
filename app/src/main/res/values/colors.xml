@@ -24,6 +24,8 @@
 
     <color name="text_third_light">#4a96ff</color>
 
+    <color name="color_delete_text_bg">#ff3831</color>
+
 
     <color name="white">#ffffffff</color>
     <color name="white_dark">#ddffffff</color>

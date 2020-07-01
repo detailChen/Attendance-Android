@@ -6,6 +6,9 @@ package com.attendance.bk.bus
 
 import androidx.annotation.IntDef
 import com.attendance.bk.bean.WXLoginResult
+import com.attendance.bk.db.BkDb
+import com.attendance.bk.db.table.BillType
+import com.attendance.bk.db.table.Trade
 
 /**
  * 同步数据事件
@@ -21,3 +24,7 @@ const val SYNC_OK = 1
 const val SYNC_FAIL = 0
 
 data class RequestWXInfoSuccessEvent(val wxLoginResult: WXLoginResult)
+
+data class BillTypeEvent(val billType: BillType?, @BkDb.OPType val type: Int)
+
+data class TradeEvent(val trade: Trade?, @BkDb.OPType val type: Int)

@@ -9,7 +9,7 @@ import com.attendance.bk.bean.TradeItemData
 import com.attendance.bk.db.BkDb
 import com.attendance.bk.db.table.Trade
 import com.attendance.bk.utils.DateUtil
-import com.boss.bk.db.TRADE_TYPE_IN
+import com.attendance.bk.db.TRADE_TYPE_IN
 import io.reactivex.Single
 import java.util.*
 
@@ -44,6 +44,29 @@ abstract class TradeDao {
                 it.onSuccess(false)
                 throw RuntimeException("addVisitorUserTrade failed->", e)
             }
+        }
+    }
+
+    fun addModifyTrade(trade: Trade?, isModify: Boolean = false) {
+        BkDb.instance.runInTransaction {
+            trade?.apply {
+                if (isModify) update(this) else insert(this)
+            }
+//            imageList?.apply {
+//                val imageDao = BkDb.instance.imageDao()
+//                if (!isModify) {
+//                    imageDao.insert(this)
+//                } else {
+//                    for (image in this) {
+//                        val localImage = imageDao.queryImageByName(image.imageName)
+//                        if (localImage == null) {
+//                            imageDao.insert(image)
+//                        } else {
+//                            imageDao.update(image)
+//                        }
+//                    }
+//                }
+//            }
         }
     }
 
@@ -151,7 +174,7 @@ abstract class TradeDao {
 
                 }
             }
-            val monthOutInMoney = Pair<Double,Double>()
+//            val monthOutInMoney = Pair<Double,Double>()
 
         }
     }

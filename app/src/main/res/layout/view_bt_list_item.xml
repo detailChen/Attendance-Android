@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:gravity="center">
+
+
+    <com.attendance.bk.view.BkImageView
+        android:id="@+id/bt_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:padding="9dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="13dp"
+        tools:src="@drawable/ic_category_bills_click" />
+
+    <TextView
+        android:id="@+id/bt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        tools:text="工资"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/memo_text_size" />
+
+    <ImageView
+        android:layout_toRightOf="@+id/bt_icon"
+        android:id="@+id/bill_type_delete"
+        app:srcCompat="@drawable/ic_delete"
+        android:layout_width="15dp"
+        android:visibility="invisible"
+        android:layout_marginTop="5dp"
+        android:layout_height="15dp" />
+
+</RelativeLayout>

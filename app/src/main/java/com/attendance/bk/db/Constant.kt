@@ -1,16 +1,8 @@
-package com.boss.bk.db
+package com.attendance.bk.db
 
 /**
  * Created by Chen xuJie on 2019/7/4.
  */
-
-/**
- * 账本的类型id
- *
- */
-const val BOOK_INCOME_TYPE_ID = "1"//营业收入
-const val BOOK_EXPENSE_TYPE_ID = "2"//营业支出
-const val BOOK_PURCHASE_TYPE_ID = "3"//采购进货
 
 /**
  * 图片上传状态

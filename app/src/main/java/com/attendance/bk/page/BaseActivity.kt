@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.view.KeyEvent
 import android.view.MenuItem
 import android.view.View
+import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.annotation.ColorRes
 import androidx.annotation.StringRes
@@ -34,8 +35,6 @@ open class BaseActivity : AppCompatActivity() {
 
     protected lateinit var mActivity: Activity
 
-    private var sqlScoutServer: SqlScoutServer? = null
-
     /**
      * progressDialog.
      */
@@ -48,32 +47,22 @@ open class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mActivity = this
-        sqlScoutServer = SqlScoutServer.create(this, packageName)
         window.setBackgroundDrawableResource(R.drawable.bg_activity)
     }
 
 
     override fun onResume() {
         super.onResume()
-        sqlScoutServer!!.resume()
     }
 
     override fun onPause() {
         super.onPause()
-        sqlScoutServer!!.pause()
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        sqlScoutServer!!.destroy()
     }
 
-    open fun setSupportToolbar(toolbar: Toolbar) {
-        ToolbarUtil.setSupportToolbar(this, toolbar)
-        if (canUseStatus() && lightToolbar()) {
-            setToolbarColor()
-        }
-    }
 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -82,6 +71,13 @@ open class BaseActivity : AppCompatActivity() {
             return true
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    open fun setSupportToolbar(toolbar: RelativeLayout) {
+        ToolbarUtil.setSupportToolbar(this, toolbar)
+        if (canUseStatus() && lightToolbar()) {
+            setToolbarColor()
+        }
     }
 
     /**

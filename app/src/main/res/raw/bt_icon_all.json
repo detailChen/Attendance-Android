@@ -3,8 +3,8 @@
     "name": "餐饮",
     "icons": [
       {
-        "clickIcon": "ic_click_food__01",
-        "normalIcon": "ic_normal_food__01"
+        "clickIcon": "ic_click_food_01",
+        "normalIcon": "ic_normal_food_01"
       },
       {
         "clickIcon": "ic_click_food_02",
@@ -603,12 +603,12 @@
         "normalIcon": "ic_normal_income_01"
       },
       {
-        "clickIcon": "ic_click_income_01",
-        "normalIcon": "ic_normal_income_01"
+        "clickIcon": "ic_click_income_02",
+        "normalIcon": "ic_normal_income_02"
       },
       {
-        "clickIcon": "ic_click_income_01",
-        "normalIcon": "ic_normal_income_01"
+        "clickIcon": "ic_click_income_03",
+        "normalIcon": "ic_normal_income_03"
       }
     ]
   }
