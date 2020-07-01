@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.attendance.bk.view.NoScrollViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:id="@+id/fragment_tab_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/tab_attendance_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/main_tab_height"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg_view_click"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_icon_attendance"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                tools:srcCompat="@drawable/main_tab_attendance_sel" />
+
+            <TextView
+                android:id="@+id/tab_text_attendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="考勤"
+                android:textColor="@color/color_home_tab_normal"
+                android:textSize="@dimen/small_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_bill_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/main_tab_height"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg_view_click"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_icon_bill"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitXY"
+                tools:srcCompat="@drawable/main_tab_analysis_nor" />
+
+            <TextView
+                android:id="@+id/tab_text_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="账单"
+                android:textColor="@color/color_home_tab_normal"
+                android:textSize="@dimen/small_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_form_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/main_tab_height"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg_view_click"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_icon_form"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitXY"
+                tools:srcCompat="@drawable/main_tab_analysis_nor" />
+
+            <TextView
+                android:id="@+id/tab_text_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="报表"
+                android:textColor="@color/color_home_tab_normal"
+                android:textSize="@dimen/small_text_size" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/tab_mine_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/main_tab_height"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg_view_click"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_icon_mine"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitXY"
+                tools:srcCompat="@drawable/main_tab_mine_nor" />
+
+            <TextView
+                android:id="@+id/tab_text_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="我的"
+                android:textColor="@color/color_home_tab_normal"
+                android:textSize="@dimen/small_text_size" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,2 @@
+include ':app',':lib-tablayout',':lib-date-picker'
+rootProject.name='Attendance'

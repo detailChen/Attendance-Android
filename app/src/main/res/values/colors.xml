@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ebebeb</color>
+    <color name="colorPrimaryDark">#ff393939</color>
+    <color name="colorAccent">#4a96ff</color>
+
+    <!--页面底色-->
+    <color name="color_def_bg">#f7f7f7</color>
+
+    <!--cardView背景颜色-->
+    <color name="color_card_bg">#fafafa</color>
+
+    <color name="color_home_tab_normal">#BBBBBB</color>
+    <color name="color_home_tab_active">#4a96ff</color>
+
+
+    <color name="color_view_pressed">#ffebebeb</color>
+
+
+    <color name="text_primary">#ff333333</color>
+    <color name="text_second">#ff999999</color>
+    <color name="text_third">#4a96ff</color>
+    <color name="text_third_pressed">#4a96ff</color>
+
+    <color name="text_third_light">#4a96ff</color>
+
+
+    <color name="white">#ffffffff</color>
+    <color name="white_dark">#ddffffff</color>
+    <color name="headline">#33000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="indicator_dot_nor_color">#66999999</color>
+    <color name="indicator_dot_sel_color">#ff999999</color>
+
+    <color name="view_pressed">#ffebebeb</color>
+
+    <color name="bottom_dialog_cancel">#fff6f6f6</color>
+
+    <color name="divider">#dddddd</color>
+
+    <color name="color_in">#ee4f4f</color>
+    <color name="color_out">#3ba34a</color>
+    <color name="color_purchase">#3ba388</color>
+
+
+    <color name="lock_normal">#cce6b14f</color>
+    <color name="lock_active">#e6b14f</color>
+    <color name="lock_error">#fff33212</color>
+
+
+    <color name="greyish">#aaa8a8</color>
+    <color name="mine_shaft">#303030</color>
+
+
+    <color name="numkeyboard_divider">#f7f7f7</color>
+
+    <color name="color_1">#fffc7a60</color>
+    <color name="color_2">#ffb1c23e</color>
+    <color name="color_3">#ff25b4dd</color>
+    <color name="color_4">#ff5a98de</color>
+    <color name="color_5">#ff8bb84a</color>
+    <color name="color_6">#ffa883d8</color>
+    <color name="color_7">#ff20cac0</color>
+    <color name="color_8">#fffaa94a</color>
+    <color name="color_9">#ffef6161</color>
+    <color name="color_10">#fff16189</color>
+    <color name="color_11">#ffba2e8b</color>
+    <color name="color_12">#ff3260b5</color>
+    <color name="color_13">#ffd96421</color>
+    <color name="color_14">#ffba4747</color>
+    <color name="color_15">#ffbda337</color>
+
+    <color name="loading_progress_color_1">#ff5a98de</color>
+    <color name="loading_progress_color_2">#fffaa94a</color>
+    <color name="loading_progress_color_3">#ff8bb84a</color>
+
+    <integer-array name="loading_colors">
+        <item>@color/loading_progress_color_1</item>
+        <item>@color/loading_progress_color_2</item>
+        <item>@color/loading_progress_color_3</item>
+    </integer-array>
+
+
+    <integer-array name="color_array">
+        <item>@color/color_1</item>
+        <item>@color/color_2</item>
+        <item>@color/color_3</item>
+        <item>@color/color_4</item>
+        <item>@color/color_5</item>
+        <item>@color/color_6</item>
+        <item>@color/color_7</item>
+        <item>@color/color_8</item>
+        <item>@color/color_9</item>
+        <item>@color/color_10</item>
+        <item>@color/color_11</item>
+        <item>@color/color_12</item>
+        <item>@color/color_13</item>
+        <item>@color/color_14</item>
+        <item>@color/color_15</item>
+    </integer-array>
+
+
+</resources>

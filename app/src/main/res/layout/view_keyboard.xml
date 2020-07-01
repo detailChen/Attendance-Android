@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/color_def_bg"
+    android:padding="5dp"
+    android:layout_height="@dimen/num_keyboard_height">
+
+    <TextView
+        android:id="@+id/kb_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_btn_kb_click"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/kb_4"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/kb_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/kb_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_btn_kb_click"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/kb_1"
+        app:layout_constraintLeft_toRightOf="@+id/kb_1"
+        app:layout_constraintRight_toLeftOf="@+id/kb_3"
+        app:layout_constraintTop_toTopOf="@+id/kb_1" />
+
+    <TextView
+        android:id="@+id/kb_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_btn_kb_click"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/kb_1"
+        app:layout_constraintLeft_toRightOf="@+id/kb_2"
+        app:layout_constraintRight_toLeftOf="@+id/kb_plus"
+        app:layout_constraintTop_toTopOf="@+id/kb_1" />
+
+    
+
+    <TextView
+        android:id="@+id/kb_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_btn_kb_click"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/kb_7"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/kb_5"
+        app:layout_constraintTop_toBottomOf="@+id/kb_1" />
+
+    <TextView
+        android:id="@+id/kb_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_btn_kb_click"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/kb_4"
+        app:layout_constraintLeft_toRightOf="@+id/kb_4"
+        app:layout_constraintRight_toLeftOf="@+id/kb_6"
+        app:layout_constraintTop_toTopOf="@+id/kb_4" />
+
+    <TextView
+        android:id="@+id/kb_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/kb_1"
+        android:background="@drawable/bg_btn_kb_click"
+        android:gravity="center"
+        android:text="6"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/kb_4"
+        app:layout_constraintLeft_toRightOf="@+id/kb_5"
+        app:layout_constraintRight_toLeftOf="@+id/kb_plus"
+        app:layout_constraintTop_toTopOf="@+id/kb_4" />
+
+    <TextView
+        android:id="@+id/kb_plus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_btn_kb_click"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/kb_1"
+        app:layout_constraintLeft_toRightOf="@+id/kb_3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kb_1" />
+
+    <TextView
+        android:id="@+id/kb_7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_btn_kb_click"
+        android:gravity="center"
+        android:text="7"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/kb_dot"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/kb_8"
+        app:layout_constraintTop_toBottomOf="@+id/kb_4" />
+
+    <TextView
+        android:id="@+id/kb_8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_btn_kb_click"
+        android:gravity="center"
+        android:text="8"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/kb_7"
+        app:layout_constraintLeft_toRightOf="@+id/kb_7"
+        app:layout_constraintRight_toLeftOf="@+id/kb_9"
+        app:layout_constraintTop_toTopOf="@+id/kb_7" />
+
+    <TextView
+        android:id="@+id/kb_9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_btn_kb_click"
+        android:gravity="center"
+        android:text="9"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/kb_7"
+        app:layout_constraintLeft_toRightOf="@+id/kb_8"
+        app:layout_constraintRight_toLeftOf="@+id/kb_minus"
+        app:layout_constraintTop_toTopOf="@+id/kb_7" />
+
+    <TextView
+        android:id="@+id/kb_minus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@+id/kb_6"
+        android:background="@drawable/bg_btn_kb_click"
+        android:gravity="center"
+        android:text="—"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/kb_4"
+        app:layout_constraintLeft_toRightOf="@+id/kb_6"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kb_4" />
+
+
+    <ImageView
+        android:id="@+id/kb_dot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_btn_kb_click"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/kb_0"
+        app:layout_constraintTop_toBottomOf="@+id/kb_7"
+        app:srcCompat="@drawable/bg_keyboard_dot" />
+
+    <TextView
+        android:id="@+id/kb_0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_btn_kb_click"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/kb_dot"
+        app:layout_constraintLeft_toRightOf="@+id/kb_dot"
+        app:layout_constraintRight_toLeftOf="@+id/kb_delete"
+        app:layout_constraintTop_toTopOf="@+id/kb_dot" />
+
+
+    <com.attendance.bk.view.BkImageView
+        android:id="@+id/kb_delete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_btn_kb_click"
+        android:scaleType="centerInside"
+        android:padding="12dp"
+        app:bkImageColor="@color/text_primary"
+        app:layout_constraintBottom_toBottomOf="@id/kb_dot"
+        app:layout_constraintLeft_toRightOf="@+id/kb_0"
+        app:layout_constraintRight_toLeftOf="@+id/kb_save"
+        app:layout_constraintTop_toTopOf="@+id/kb_dot"
+        app:showFlags="FLAG_COLOR"
+        app:srcCompat="@drawable/ic_keyboard_del" />
+
+
+    <TextView
+        android:id="@+id/kb_save"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_btn_kb_ok_click"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_text_size"
+        app:layout_constraintBottom_toBottomOf="@id/kb_dot"
+        app:layout_constraintLeft_toRightOf="@+id/kb_delete"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kb_7" />
+
+    <ImageView
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/numkeyboard_divider"
+        app:layout_constraintRight_toRightOf="@+id/kb_1" />
+
+    <ImageView
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/numkeyboard_divider"
+        app:layout_constraintRight_toRightOf="@+id/kb_2" />
+
+    <ImageView
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/numkeyboard_divider"
+        app:layout_constraintRight_toRightOf="@+id/kb_3" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/numkeyboard_divider"
+        app:layout_constraintBottom_toBottomOf="@+id/kb_1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/numkeyboard_divider"
+        app:layout_constraintBottom_toBottomOf="@+id/kb_4" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/kb_7"
+        app:layout_constraintRight_toLeftOf="@+id/kb_save"
+        android:background="@color/numkeyboard_divider"
+        app:layout_constraintBottom_toBottomOf="@+id/kb_7" />
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

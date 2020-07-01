@@ -1,0 +1,44 @@
+[
+  {
+    "account_type_id": "1",
+    "account_type_name": "现金",
+    "account_type_icon": "account_xj",
+    "type": 0
+  },
+  {
+    "account_type_id": "2",
+    "account_type_name": "储蓄卡",
+    "account_type_icon": "account_cxk",
+    "type": 0
+  },
+  {
+    "account_type_id": "3",
+    "account_type_name": "信用卡",
+    "account_type_icon": "account_xyk",
+    "type": 1
+  },
+  {
+    "account_type_id": "4",
+    "account_type_name": "支付宝",
+    "account_type_icon": "account_zfb",
+    "type": 0
+  },
+  {
+    "account_type_id": "5",
+    "account_type_name": "微信钱包",
+    "account_type_icon": "account_wxqb",
+    "type": 0
+  },
+  {
+    "account_type_id": "6",
+    "account_type_name": "蚂蚁花呗",
+    "account_type_icon": "account_myhb",
+    "type": 1
+  },
+  {
+    "account_type_id": "7",
+    "account_type_name": "京东白条",
+    "account_type_icon": "account_jdbt",
+    "type": 1
+  }
+]

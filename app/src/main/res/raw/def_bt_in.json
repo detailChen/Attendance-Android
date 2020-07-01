@@ -1,0 +1,68 @@
+[
+  {
+    "name": "工资",
+    "type": 0,
+    "clickIcon": "ic_category_salary_click",
+    "normalIcon": "ic_category_salary_normal"
+  },
+  {
+    "name": "奖金",
+    "type": 0,
+    "clickIcon": "ic_category_awards_click",
+    "normalIcon": "ic_category_awards_normal"
+  },
+  {
+    "name": "捐赠",
+    "type": 0,
+    "clickIcon": "ic_category_grants_click",
+    "normalIcon": "ic_category_grants_normal"
+  },
+  {
+    "name": "销售",
+    "type": 0,
+    "clickIcon": "ic_category_sale_click",
+    "normalIcon": "ic_category_sale_normal"
+  },
+  {
+    "name": "出租",
+    "type": 0,
+    "clickIcon": "ic_category_rental_click",
+    "normalIcon": "ic_category_rental_normal"
+  },
+  {
+    "name": "退款",
+    "type": 0,
+    "clickIcon": "ic_category_refunds_click",
+    "normalIcon": "ic_category_refunds_normal"
+  },
+  {
+    "name": "优惠券",
+    "type": 0,
+    "clickIcon": "ic_category_coupons_click",
+    "normalIcon": "ic_category_coupons_normal"
+  },
+  {
+    "name": "彩票",
+    "type": 0,
+    "clickIcon": "ic_category_lottery_click",
+    "normalIcon": "ic_category_lottery_normal"
+  },
+  {
+    "name": "股息",
+    "type": 0,
+    "clickIcon": "ic_category_dividends_click",
+    "normalIcon": "ic_category_dividends_normal"
+  },
+  {
+    "name": "投资",
+    "type": 0,
+    "clickIcon": "ic_category_investments_click",
+    "normalIcon": "ic_category_investments_normal"
+  },
+  {
+    "name": "其他",
+    "type": 0,
+    "clickIcon": "ic_category_others_click",
+    "normalIcon": "ic_category_others_normal"
+  }
+]

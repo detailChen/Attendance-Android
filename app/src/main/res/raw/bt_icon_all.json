@@ -1,0 +1,615 @@
+[
+  {
+    "name": "餐饮",
+    "icons": [
+      {
+        "clickIcon": "ic_click_food__01",
+        "normalIcon": "ic_normal_food__01"
+      },
+      {
+        "clickIcon": "ic_click_food_02",
+        "normalIcon": "ic_normal_food_02"
+      },
+      {
+        "clickIcon": "ic_click_food_03",
+        "normalIcon": "ic_normal_food_03"
+      },
+      {
+        "clickIcon": "ic_click_food_04",
+        "normalIcon": "ic_normal_food_04"
+      },
+      {
+        "clickIcon": "ic_click_food_05",
+        "normalIcon": "ic_normal_food_05"
+      },
+      {
+        "clickIcon": "ic_click_food_06",
+        "normalIcon": "ic_normal_food_06"
+      },
+      {
+        "clickIcon": "ic_click_food_07",
+        "normalIcon": "ic_normal_food_07"
+      },
+      {
+        "clickIcon": "ic_click_food_08",
+        "normalIcon": "ic_normal_food_08"
+      },
+      {
+        "clickIcon": "ic_click_food_09",
+        "normalIcon": "ic_normal_food_09"
+      },
+      {
+        "clickIcon": "ic_click_food_10",
+        "normalIcon": "ic_normal_food_10"
+      },
+      {
+        "clickIcon": "ic_click_food_11",
+        "normalIcon": "ic_normal_food_11"
+      },
+      {
+        "clickIcon": "ic_click_food_12",
+        "normalIcon": "ic_normal_food_12"
+      },
+      {
+        "clickIcon": "ic_click_food_13",
+        "normalIcon": "ic_normal_food_013"
+      },
+      {
+        "clickIcon": "ic_click_food_14",
+        "normalIcon": "ic_normal_food_14"
+      },
+      {
+        "clickIcon": "ic_click_food_15",
+        "normalIcon": "ic_normal_food_15"
+      },
+      {
+        "clickIcon": "ic_click_food_16",
+        "normalIcon": "ic_normal_food_16"
+      },
+      {
+        "clickIcon": "ic_click_food_17",
+        "normalIcon": "ic_normal_food_17"
+      },
+      {
+        "clickIcon": "ic_click_food_18",
+        "normalIcon": "ic_normal_food_18"
+      },
+      {
+        "clickIcon": "ic_click_food_19",
+        "normalIcon": "ic_normal_food_19"
+      }
+    ]
+  },
+  {
+    "name": "交通",
+    "icons": [
+      {
+        "clickIcon": "ic_click_transportation_01",
+        "normalIcon": "ic_normal_transportation_01"
+      },
+      {
+        "clickIcon": "ic_click_transportation_02",
+        "normalIcon": "ic_normal_transportation_02"
+      },
+      {
+        "clickIcon": "ic_click_transportation_03",
+        "normalIcon": "ic_normal_transportation_03"
+      },
+      {
+        "clickIcon": "ic_click_transportation_04",
+        "normalIcon": "ic_normal_transportation_04"
+      },
+      {
+        "clickIcon": "ic_click_transportation_05",
+        "normalIcon": "ic_normal_transportation_05"
+      },
+      {
+        "clickIcon": "ic_click_transportation_06",
+        "normalIcon": "ic_normal_transportation_06"
+      },
+      {
+        "clickIcon": "ic_click_transportation_07",
+        "normalIcon": "ic_normal_transportation_07"
+      },
+      {
+        "clickIcon": "ic_click_transportation_08",
+        "normalIcon": "ic_normal_transportation_08"
+      },
+      {
+        "clickIcon": "ic_click_transportation_09",
+        "normalIcon": "ic_normal_transportation_09"
+      },
+      {
+        "clickIcon": "ic_click_transportation_10",
+        "normalIcon": "ic_normal_transportation_10"
+      },
+      {
+        "clickIcon": "ic_click_transportation_11",
+        "normalIcon": "ic_normal_transportation_11"
+      },
+      {
+        "clickIcon": "ic_click_transportation_12",
+        "normalIcon": "ic_normal_transportation_12"
+      },
+      {
+        "clickIcon": "ic_click_transportation_13",
+        "normalIcon": "ic_normal_transportation_13"
+      },
+      {
+        "clickIcon": "ic_click_transportation_14",
+        "normalIcon": "ic_normal_transportation_14"
+      },
+      {
+        "clickIcon": "ic_click_transportation_15",
+        "normalIcon": "ic_normal_transportation_15"
+      },
+      {
+        "clickIcon": "ic_click_transportation_16",
+        "normalIcon": "ic_normal_transportation_16"
+      }
+    ]
+  },
+  {
+    "name": "购物",
+    "icons": [
+      {
+        "clickIcon": "ic_click_shopping_01",
+        "normalIcon": "ic_normal_shopping_01"
+      },
+      {
+        "clickIcon": "ic_click_shopping_02",
+        "normalIcon": "ic_normal_shopping_02"
+      },
+      {
+        "clickIcon": "ic_click_shopping_03",
+        "normalIcon": "ic_normal_shopping_03"
+      },
+      {
+        "clickIcon": "ic_click_shopping_04",
+        "normalIcon": "ic_normal_shopping_04"
+      },
+      {
+        "clickIcon": "ic_click_shopping_05",
+        "normalIcon": "ic_normal_shopping_05"
+      },
+      {
+        "clickIcon": "ic_click_shopping_06",
+        "normalIcon": "ic_normal_shopping_06"
+      },
+      {
+        "clickIcon": "ic_click_shopping_07",
+        "normalIcon": "ic_normal_shopping_07"
+      },
+      {
+        "clickIcon": "ic_click_shopping_08",
+        "normalIcon": "ic_normal_shopping_08"
+      },
+      {
+        "clickIcon": "ic_click_shopping_09",
+        "normalIcon": "ic_normal_shopping_09"
+      },
+      {
+        "clickIcon": "ic_click_shopping_10",
+        "normalIcon": "ic_normal_shopping_10"
+      },
+      {
+        "clickIcon": "ic_click_shopping_11",
+        "normalIcon": "ic_normal_shopping_11"
+      },
+      {
+        "clickIcon": "ic_click_shopping_12",
+        "normalIcon": "ic_normal_shopping_12"
+      },
+      {
+        "clickIcon": "ic_click_shopping_13",
+        "normalIcon": "ic_normal_shopping_13"
+      },
+      {
+        "clickIcon": "ic_click_shopping_14",
+        "normalIcon": "ic_normal_shopping_14"
+      },
+      {
+        "clickIcon": "ic_click_shopping_15",
+        "normalIcon": "ic_normal_shopping_15"
+      },
+      {
+        "clickIcon": "ic_click_shopping_16",
+        "normalIcon": "ic_normal_shopping_16"
+      },
+      {
+        "clickIcon": "ic_click_shopping_17",
+        "normalIcon": "ic_normal_shopping_17"
+      },
+      {
+        "clickIcon": "ic_click_shopping_18",
+        "normalIcon": "ic_normal_shopping_18"
+      },
+      {
+        "clickIcon": "ic_click_shopping_19",
+        "normalIcon": "ic_normal_shopping_19"
+      },
+      {
+        "clickIcon": "ic_click_shopping_20",
+        "normalIcon": "ic_normal_shopping_20"
+      },
+      {
+        "clickIcon": "ic_click_shopping_21",
+        "normalIcon": "ic_normal_shopping_21"
+      },
+      {
+        "clickIcon": "ic_click_shopping_22",
+        "normalIcon": "ic_normal_shopping_22"
+      }
+    ]
+  },
+  {
+    "name": "娱乐",
+    "icons": [
+      {
+        "clickIcon": "ic_click_entertainment_01",
+        "normalIcon": "ic_normal_entertainment_01"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_02",
+        "normalIcon": "ic_normal_entertainment_02"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_03",
+        "normalIcon": "ic_normal_entertainment_03"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_04",
+        "normalIcon": "ic_normal_entertainment_04"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_05",
+        "normalIcon": "ic_normal_entertainment_05"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_06",
+        "normalIcon": "ic_normal_entertainment_06"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_07",
+        "normalIcon": "ic_normal_entertainment_07"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_08",
+        "normalIcon": "ic_normal_entertainment_08"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_09",
+        "normalIcon": "ic_normal_entertainment_09"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_10",
+        "normalIcon": "ic_normal_entertainment_10"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_11",
+        "normalIcon": "ic_normal_entertainment_11"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_12",
+        "normalIcon": "ic_normal_entertainment_12"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_13",
+        "normalIcon": "ic_normal_entertainment_13"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_14",
+        "normalIcon": "ic_normal_entertainment_14"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_15",
+        "normalIcon": "ic_normal_entertainment_15"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_16",
+        "normalIcon": "ic_normal_entertainment_16"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_17",
+        "normalIcon": "ic_normal_entertainment_17"
+      },
+      {
+        "clickIcon": "ic_click_entertainment_18",
+        "normalIcon": "ic_normal_entertainment_18"
+      }
+    ]
+  },
+  {
+    "name": "健康",
+    "icons": [
+      {
+        "clickIcon": "ic_click_fitness_01",
+        "normalIcon": "ic_normal_fitness_01"
+      },
+      {
+        "clickIcon": "ic_click_fitness_02",
+        "normalIcon": "ic_normal_fitness_02"
+      },
+      {
+        "clickIcon": "ic_click_fitness_03",
+        "normalIcon": "ic_normal_fitness_03"
+      },
+      {
+        "clickIcon": "ic_click_fitness_04",
+        "normalIcon": "ic_normal_fitness_04"
+      },
+      {
+        "clickIcon": "ic_click_fitness_05",
+        "normalIcon": "ic_normal_fitness_05"
+      },
+      {
+        "clickIcon": "ic_click_fitness_06",
+        "normalIcon": "ic_normal_fitness_06"
+      }
+    ]
+  },
+  {
+    "name": "医疗",
+    "icons": [
+      {
+        "clickIcon": "ic_click_medical_01",
+        "normalIcon": "ic_normal_medical_01"
+      },
+      {
+        "clickIcon": "ic_click_medical_02",
+        "normalIcon": "ic_normal_medical_02"
+      },
+      {
+        "clickIcon": "ic_click_medical_03",
+        "normalIcon": "ic_normal_medical_03"
+      },
+      {
+        "clickIcon": "ic_click_medical_04",
+        "normalIcon": "ic_normal_medical_04"
+      },
+      {
+        "clickIcon": "ic_click_medical_05",
+        "normalIcon": "ic_normal_medical_05"
+      },
+      {
+        "clickIcon": "ic_click_medical_06",
+        "normalIcon": "ic_normal_medical_06"
+      },
+      {
+        "clickIcon": "ic_click_medical_07",
+        "normalIcon": "ic_normal_medical_07"
+      },
+      {
+        "clickIcon": "ic_click_medical_08",
+        "normalIcon": "ic_normal_medical_08"
+      }
+    ]
+  },
+  {
+    "name": "家庭",
+    "icons": [
+      {
+        "clickIcon": "ic_click_family_01",
+        "normalIcon": "ic_normal_family_01"
+      },
+      {
+        "clickIcon": "ic_click_family_02",
+        "normalIcon": "ic_normal_family_02"
+      },
+      {
+        "clickIcon": "ic_click_family_03",
+        "normalIcon": "ic_normal_family_03"
+      },
+      {
+        "clickIcon": "ic_click_family_04",
+        "normalIcon": "ic_normal_family_04"
+      },
+      {
+        "clickIcon": "ic_click_family_05",
+        "normalIcon": "ic_normal_family_05"
+      },
+      {
+        "clickIcon": "ic_click_family_06",
+        "normalIcon": "ic_normal_family_06"
+      },
+      {
+        "clickIcon": "ic_click_family_07",
+        "normalIcon": "ic_normal_family_07"
+      }
+    ]
+  },
+  {
+    "name": "家具",
+    "icons": [
+      {
+        "clickIcon": "ic_click_furniture_01",
+        "normalIcon": "ic_normal_furniture_01"
+      },
+      {
+        "clickIcon": "ic_click_furniture_02",
+        "normalIcon": "ic_normal_furniture_02"
+      },
+      {
+        "clickIcon": "ic_click_furniture_03",
+        "normalIcon": "ic_normal_furniture_03"
+      },
+      {
+        "clickIcon": "ic_click_furniture_04",
+        "normalIcon": "ic_normal_furniture_04"
+      },
+      {
+        "clickIcon": "ic_click_furniture_05",
+        "normalIcon": "ic_normal_furniture_05"
+      },
+      {
+        "clickIcon": "ic_click_furniture_06",
+        "normalIcon": "ic_normal_furniture_06"
+      },
+      {
+        "clickIcon": "ic_click_furniture_07",
+        "normalIcon": "ic_normal_furniture_07"
+      },
+      {
+        "clickIcon": "ic_click_furniture_08",
+        "normalIcon": "ic_normal_furniture_08"
+      },
+      {
+        "clickIcon": "ic_click_furniture_09",
+        "normalIcon": "ic_normal_furniture_09"
+      },
+      {
+        "clickIcon": "ic_click_furniture_10",
+        "normalIcon": "ic_normal_furniture_10"
+      },
+      {
+        "clickIcon": "ic_click_furniture_11",
+        "normalIcon": "ic_normal_furniture_12"
+      },
+      {
+        "clickIcon": "ic_click_furniture_13",
+        "normalIcon": "ic_normal_furniture_13"
+      },
+      {
+        "clickIcon": "ic_click_furniture_14",
+        "normalIcon": "ic_normal_furniture_14"
+      },
+      {
+        "clickIcon": "ic_click_furniture_15",
+        "normalIcon": "ic_normal_furniture_15"
+      },
+      {
+        "clickIcon": "ic_click_furniture_16",
+        "normalIcon": "ic_normal_furniture_16"
+      },
+      {
+        "clickIcon": "ic_click_furniture_17",
+        "normalIcon": "ic_normal_furniture_17"
+      }
+    ]
+  },
+  {
+    "name": "数码产品",
+    "icons": [
+      {
+        "clickIcon": "ic_click_electronics_01",
+        "normalIcon": "ic_normal_electronics_01"
+      },
+      {
+        "clickIcon": "ic_click_electronics_02",
+        "normalIcon": "ic_normal_electronics_02"
+      },
+      {
+        "clickIcon": "ic_click_electronics_03",
+        "normalIcon": "ic_normal_electronics_03"
+      },
+      {
+        "clickIcon": "ic_click_electronics_04",
+        "normalIcon": "ic_normal_electronics_04"
+      },
+      {
+        "clickIcon": "ic_click_electronics_05",
+        "normalIcon": "ic_normal_electronics_05"
+      },
+      {
+        "clickIcon": "ic_click_electronics_06",
+        "normalIcon": "ic_normal_electronics_06"
+      },
+      {
+        "clickIcon": "ic_click_electronics_07",
+        "normalIcon": "ic_normal_electronics_07"
+      }
+    ]
+  },
+  {
+    "name": "教育",
+    "icons": [
+      {
+        "clickIcon": "ic_click_education_01",
+        "normalIcon": "ic_normal_education_01"
+      },
+      {
+        "clickIcon": "ic_click_education_02",
+        "normalIcon": "ic_normal_education_02"
+      },
+      {
+        "clickIcon": "ic_click_education_03",
+        "normalIcon": "ic_normal_education_03"
+      },
+      {
+        "clickIcon": "ic_click_education_04",
+        "normalIcon": "ic_normal_education_04"
+      },
+      {
+        "clickIcon": "ic_click_education_05",
+        "normalIcon": "ic_normal_education_05"
+      },
+      {
+        "clickIcon": "ic_click_education_06",
+        "normalIcon": "ic_normal_education_06"
+      },
+      {
+        "clickIcon": "ic_click_education_07",
+        "normalIcon": "ic_normal_education_07"
+      }
+    ]
+  },
+  {
+    "name": "个人",
+    "icons": [
+      {
+        "clickIcon": "ic_click_personal_01",
+        "normalIcon": "ic_normal_personal_01"
+      },
+      {
+        "clickIcon": "ic_click_personal_02",
+        "normalIcon": "ic_normal_personal_02"
+      },
+      {
+        "clickIcon": "ic_click_personal_03",
+        "normalIcon": "ic_normal_personal_03"
+      },
+      {
+        "clickIcon": "ic_click_personal_04",
+        "normalIcon": "ic_normal_personal_04"
+      }
+    ]
+  },
+  {
+    "name": "生活",
+    "icons": [
+      {
+        "clickIcon": "ic_click_life_01",
+        "normalIcon": "ic_normal_life_01"
+      },
+      {
+        "clickIcon": "ic_click_life_02",
+        "normalIcon": "ic_normal_life_02"
+      },
+      {
+        "clickIcon": "ic_click_life_03",
+        "normalIcon": "ic_normal_life_03"
+      },
+      {
+        "clickIcon": "ic_click_life_04",
+        "normalIcon": "ic_normal_life_04"
+      }
+    ]
+  },
+  {
+    "name": "收入",
+    "icons": [
+      {
+        "clickIcon": "ic_click_income_01",
+        "normalIcon": "ic_normal_income_01"
+      },
+      {
+        "clickIcon": "ic_click_income_01",
+        "normalIcon": "ic_normal_income_01"
+      },
+      {
+        "clickIcon": "ic_click_income_01",
+        "normalIcon": "ic_normal_income_01"
+      }
+    ]
+  }
+]

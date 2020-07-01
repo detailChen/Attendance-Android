@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_third"
+            android:minHeight="@dimen/toolbar_height">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="45dp"
+                android:minHeight="45dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_back_white"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/book_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:minHeight="@dimen/toolbar_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minWidth="120dp">
+
+                <TextView
+                    android:id="@+id/book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    tools:text="日常账本"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <com.attendance.bk.view.BkImageView
+                    android:id="@+id/ic_book"
+                    android:layout_width="11dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp"
+                    app:bkImageColor="@color/text_primary"
+                    app:showFlags="FLAG_COLOR"
+                    app:srcCompat="@drawable/ic_triangle_down" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="@color/text_third"
+            android:layout_height="60dp">
+
+            <com.bossbk.tablayout.QMUITabSegment
+                android:id="@+id/tab_layout"
+                android:layout_gravity="center"
+                app:qmui_tab_indicator_height="1.5dp"
+                app:qmui_tab_mode="scrollable"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/trade_type_money"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/left_right_margin"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:hint="选择类别"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_primary"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/money_input_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.attendance.bk.view.numKeyboard.NumEquationView
+                    android:id="@+id/money_equation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="start"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:text="20+5" />
+
+                <com.attendance.bk.view.numKeyboard.NumMoneyView
+                    android:id="@+id/money_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cursorVisible="false"
+                    android:digits="0123456789.-"
+                    android:gravity="right|center_vertical"
+                    android:hint="0.00"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_dark"
+                    android:textSize="28dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/trade_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_item_height"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/bg_view_click">
+
+            <TextView
+                android:id="@+id/trade_time_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:text="时间"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/sub_title_text_size" />
+
+            <TextView
+                android:id="@+id/trade_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="9dp"
+                android:layout_toLeftOf="@+id/ic_trade_time"
+                android:hint="请选择"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/sub_title_text_size" />
+
+            <ImageView
+                android:id="@+id/ic_trade_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/left_right_margin"
+                app:srcCompat="@drawable/ic_arrow_right" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/pay_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_item_height"
+            android:background="@drawable/bg_view_click"
+            android:paddingRight="@dimen/left_right_margin">
+
+            <TextView
+                android:id="@+id/pay_type_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="支付方式"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/sub_title_text_size" />
+
+            <TextView
+                android:id="@+id/pay_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="9dp"
+                android:layout_toLeftOf="@+id/ic_pay_type"
+                android:gravity="right|center_vertical"
+                android:hint="请选择"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/sub_title_text_size" />
+
+            <ImageView
+                android:id="@+id/ic_pay_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_arrow_right" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:background="@color/divider"
+                android:orientation="vertical" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/person_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_item_height"
+            android:layout_marginTop="9dp"
+            android:visibility="gone"
+            android:background="@drawable/bg_view_click"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:paddingRight="@dimen/left_right_margin">
+
+            <TextView
+                android:id="@+id/person_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="交易方"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/sub_title_text_size" />
+
+            <TextView
+                android:id="@+id/person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="9dp"
+                android:layout_toLeftOf="@+id/ic_person"
+                android:gravity="right|center_vertical"
+                android:hint="请选择"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/sub_title_text_size" />
+
+            <ImageView
+                android:id="@+id/ic_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_arrow_right" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/add_memo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:paddingTop="@dimen/vertical_item_margin"
+            android:paddingRight="@dimen/left_right_margin"
+            android:paddingBottom="@dimen/vertical_item_margin">
+
+            <com.attendance.bk.view.BkImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitCenter"
+                app:bkImageColor="@color/text_second"
+                app:showFlags="FLAG_COLOR"
+                app:srcCompat="@drawable/ic_memo" />
+
+            <com.attendance.bk.view.ClearEditText
+                android:id="@+id/memo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="输入备注"
+                android:inputType="numberSigned|numberDecimal"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_second"
+                android:textSize="@dimen/sub_title_text_size" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/blank_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="@dimen/vertical_item_margin"
+            android:text="向上滑动可弹出数字键盘哦！"
+            android:textColor="#99999999"
+            android:textSize="@dimen/small_text_size" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_kb"
+        style="?attr/bottomSheetStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:layout_gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <com.attendance.bk.view.numKeyboard.NumKeyboardView
+            android:id="@+id/numKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/num_keyboard_height" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_bt"
+        style="?attr/bottomSheetStyle"
+        tools:visibility="gone"
+        tools:background="#66000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:minHeight="@dimen/toolbar_height" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:background="@color/transparent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bill_type_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:paddingRight="@dimen/left_right_margin" />
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

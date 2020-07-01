@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_touxiang"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="218dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_touxiang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/text_second"
+        android:textSize="@dimen/title_text_size" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="150dp"
+        android:layout_above="@+id/tv_login_hint"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_login_wx"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_above="@+id/tv_login_yk"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bg_btn_click"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="微信登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_login_yk"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginTop="5dp"
+            android:text="游客试用"
+            android:visibility="visible"
+            android:textColor="@color/text_second"
+            android:textSize="@dimen/sub_title_text_size" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/checkbox"
+        android:layout_width="15dp"
+        android:layout_marginBottom="120dp"
+        app:srcCompat="@drawable/ic_xuanzhong"
+        android:layout_marginLeft="40dp"
+        android:layout_above="@+id/tv_login_hint"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:id="@+id/user_protocol"
+        android:layout_width="wrap_content"
+        android:textSize="11sp"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@+id/checkbox"
+        android:layout_above="@+id/tv_login_hint"
+        android:layout_marginBottom="120dp"
+        android:text="我已阅读并同意以下用户协议和隐私政策"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_login_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="为了保障您的数据安全，请先登录"
+        android:textColor="@color/text_second"
+        android:textSize="@dimen/small_text_size" />
+
+</RelativeLayout>

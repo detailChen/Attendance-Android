@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/left_right_margin"
+    android:paddingRight="@dimen/left_right_margin">
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1px"-->
+<!--        android:background="@color/divider" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/money"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.boss.bk.view.BkImageView
+                    android:id="@+id/icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="9dp"
+                    android:scaleType="centerInside"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/bt_moren_22" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/sub_title_text_size"
+                    tools:text="餐饮" />
+
+
+                <RelativeLayout
+                    android:id="@+id/trade_label_layout"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/center_line"
+                        android:layout_width="1px"
+                        android:layout_height="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="9dp"
+                        android:background="@color/divider" />
+
+                    <TextView
+                        android:id="@+id/trade_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_toRightOf="@+id/center_line"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="2dp"
+                        android:text="应收款"
+                        android:textColor="@color/text_second"
+                        android:textSize="@dimen/memo_text_size" />
+
+                    <TextView
+                        android:id="@+id/trade_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/trade_label"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="已结清"
+                        android:background="@drawable/bg_stroke_corner"
+                        android:textColor="@color/text_third"
+                        android:textSize="8sp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/memo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="9dp"
+                android:singleLine="true"
+                android:textColor="@color/text_second"
+                android:textSize="@dimen/memo_text_size"
+                android:visibility="visible"
+                tools:text="呱呱小王子真的好可爱呱呱小王子真的好可爱呱呱小王子真的好可爱呱呱小王子真的好可爱" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/sub_title_text_size"
+            tools:text="100.00" />
+
+
+    </RelativeLayout>
+
+    <com.boss.bk.view.ImageLayout
+        android:id="@+id/image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="9dp"
+        tools:layout_height="60dp"
+        tools:layout_width="240dp" />
+
+
+</LinearLayout>
+
+

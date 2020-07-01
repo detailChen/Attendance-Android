@@ -1,0 +1,188 @@
+[
+  {
+    "name": "餐饮",
+    "type": 1,
+    "clickIcon": "ic_category_food_click",
+    "normalIcon": "ic_category_food_normal"
+  },
+  {
+    "name": "水电费",
+    "type": 1,
+    "clickIcon": "ic_category_bills_click",
+    "normalIcon": "ic_category_bills_normal"
+  },
+  {
+    "name": "水电费",
+    "type": 1,
+    "clickIcon": "ic_category_bills_click",
+    "normalIcon": "ic_category_bills_normal"
+  },
+  {
+    "name": "交通",
+    "type": 1,
+    "clickIcon": "ic_category_transportation_click",
+    "normalIcon": "ic_category_transportation_normal"
+  },
+  {
+    "name": "住房",
+    "type": 1,
+    "clickIcon": "ic_category_home_click",
+    "normalIcon": "ic_category_home_normal"
+  },
+  {
+    "name": "汽车",
+    "type": 1,
+    "clickIcon": "ic_category_car_click",
+    "normalIcon": "ic_category_car_normal"
+  },
+  {
+    "name": "娱乐",
+    "type": 1,
+    "clickIcon": "ic_category_entertainment_click",
+    "normalIcon": "ic_category_entertainment_normal"
+  },
+  {
+    "name": "购物",
+    "type": 1,
+    "clickIcon": "ic_category_shopping_click",
+    "normalIcon": "ic_category_shopping_normal"
+  },
+  {
+    "name": "服装",
+    "type": 1,
+    "clickIcon": "ic_category_clothing_click",
+    "normalIcon": "ic_category_clothing_normal"
+  },
+  {
+    "name": "保险",
+    "type": 1,
+    "clickIcon": "ic_category_insurance_click",
+    "normalIcon": "ic_category_insurance_normal"
+  },
+  {
+    "name": "税金",
+    "type": 1,
+    "clickIcon": "ic_category_tax_click",
+    "normalIcon": "ic_category_tax_normal"
+  },
+  {
+    "name": "话费",
+    "type": 1,
+    "clickIcon": "ic_category_telephone_click",
+    "normalIcon": "ic_category_telephone_normal"
+  },
+  {
+    "name": "香烟",
+    "type": 1,
+    "clickIcon": "ic_category_cigarette_click",
+    "normalIcon": "ic_category_cigarette_normal"
+  },
+  {
+    "name": "健康",
+    "type": 1,
+    "clickIcon": "ic_category_health_click",
+    "normalIcon": "ic_category_health_normal"
+  },
+  {
+    "name": "运动",
+    "type": 1,
+    "clickIcon": "ic_category_sport_click",
+    "normalIcon": "ic_category_sport_normal"
+  },
+  {
+    "name": "婴幼儿",
+    "type": 1,
+    "clickIcon": "ic_category_baby_click",
+    "normalIcon": "ic_category_baby_normal"
+  },
+  {
+    "name": "宠物",
+    "type": 1,
+    "clickIcon": "ic_category_pet_click",
+    "normalIcon": "ic_category_pet_normal"
+  },
+  {
+    "name": "美容",
+    "type": 1,
+    "clickIcon": "ic_category_beauty_click",
+    "normalIcon": "ic_category_beauty_normal"
+  },
+  {
+    "name": "数码",
+    "type": 1,
+    "clickIcon": "ic_category_electronics_click",
+    "normalIcon": "ic_category_electronics_normal"
+  },
+  {
+    "name": "汉堡包",
+    "type": 1,
+    "clickIcon": "ic_category_hamburger_click",
+    "normalIcon": "ic_category_hamburger_normal"
+  },
+  {
+    "name": "酒水",
+    "type": 1,
+    "clickIcon": "ic_category_wine_click",
+    "normalIcon": "ic_category_wine_normal"
+  },
+  {
+    "name": "蔬菜",
+    "type": 1,
+    "clickIcon": "ic_category_vegetables_click",
+    "normalIcon": "ic_category_vegetables_normal"
+  },
+  {
+    "name": "零食",
+    "type": 1,
+    "clickIcon": "ic_category_snacks_click",
+    "normalIcon": "ic_category_snacks_normal"
+  },
+  {
+    "name": "礼物",
+    "type": 1,
+    "clickIcon": "ic_category_gift_click",
+    "normalIcon": "ic_category_gift_normal"
+  },
+  {
+    "name": "社交",
+    "type": 1,
+    "clickIcon": "ic_category_social_click",
+    "normalIcon": "ic_category_social_normal"
+  },
+  {
+    "name": "旅行",
+    "type": 1,
+    "clickIcon": "ic_category_travel_click",
+    "normalIcon": "ic_category_travel_normal"
+  },
+  {
+    "name": "教育",
+    "type": 1,
+    "clickIcon": "ic_category_education_click",
+    "normalIcon": "ic_category_education_normal"
+  },
+  {
+    "name": "水果",
+    "type": 1,
+    "clickIcon": "ic_category_fruits_click",
+    "normalIcon": "ic_category_fruits_normal"
+  },
+  {
+    "name": "图书",
+    "type": 1,
+    "clickIcon": "ic_category_book_click",
+    "normalIcon": "ic_category_book_normal"
+  },
+  {
+    "name": "办公",
+    "type": 1,
+    "clickIcon": "ic_category_office_click",
+    "normalIcon": "ic_category_office_normal"
+  },
+  {
+    "name": "其他",
+    "type": 1,
+    "clickIcon": "ic_category_others_click",
+    "normalIcon": "ic_category_others_normal"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "现金",
+    "accountTypeId": "1",
+    "accountTypeName": "现金",
+    "accountTypeIcon": "account_xj",
+    "type": 0,
+    "orderNum": 1
+  },
+  {
+    "name": "储蓄卡",
+    "accountTypeId": "2",
+    "accountTypeName": "储蓄卡",
+    "accountTypeIcon": "account_cxk",
+    "type": 0,
+    "orderNum": 2
+  },
+  {
+    "name": "信用卡",
+    "accountTypeId": "3",
+    "accountTypeName": "信用卡",
+    "accountTypeIcon": "account_xyk",
+    "type": 1,
+    "orderNum": 3
+  },
+  {
+    "name": "支付宝",
+    "accountTypeId": "4",
+    "accountTypeName": "支付宝",
+    "accountTypeIcon": "account_zfb",
+    "type": 0,
+    "orderNum": 4
+  },
+  {
+    "name": "微信钱包",
+    "accountTypeId": "5",
+    "accountTypeName": "微信钱包",
+    "accountTypeIcon": "account_wxqb",
+    "type": 0,
+    "orderNum": 5
+  },
+  {
+    "name": "蚂蚁花呗",
+    "accountTypeId": "6",
+    "accountTypeName": "蚂蚁花呗",
+    "accountTypeIcon": "account_myhb",
+    "type": 1,
+    "orderNum": 6
+  },
+  {
+    "name": "京东白条",
+    "accountTypeId": "7",
+    "accountTypeName": "京东白条",
+    "accountTypeIcon": "account_jdbt",
+    "type": 1,
+    "orderNum": 7
+  }
+]

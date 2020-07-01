@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            tools:src="@drawable/bg_bill_top" />
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize">
+
+
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_width="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/left_right_margin"
+                android:textSize="@dimen/title_text_size"
+                tools:text="日常账本" />
+
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/cal"-->
+            <!--                android:layout_width="?attr/actionBarSize"-->
+            <!--                android:layout_height="?attr/actionBarSize"-->
+            <!--                android:layout_toLeftOf="@+id/sync_data"-->
+            <!--                android:clickable="true"-->
+            <!--                android:padding="18dp"-->
+            <!--                android:visibility="visible"-->
+            <!--                app:srcCompat="@drawable/ic_rili" />-->
+
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/sync_data"-->
+            <!--                android:layout_width="?attr/actionBarSize"-->
+            <!--                android:layout_height="?attr/actionBarSize"-->
+            <!--                android:layout_toLeftOf="@+id/search"-->
+            <!--                android:clickable="true"-->
+            <!--                android:padding="18dp"-->
+            <!--                app:srcCompat="@drawable/ic_sync" />-->
+
+            <!--            <com.boss.bk.view.BkImageView-->
+            <!--                android:id="@+id/search"-->
+            <!--                android:layout_width="?attr/actionBarSize"-->
+            <!--                android:layout_height="?attr/actionBarSize"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_gravity="bottom|right"-->
+            <!--                android:clickable="true"-->
+            <!--                android:padding="18.5dp"-->
+            <!--                android:scaleType="centerInside"-->
+            <!--                app:bkImageColor="@color/white"-->
+            <!--                app:showFlags="FLAG_COLOR"-->
+            <!--                app:srcCompat="@drawable/ic_search" />-->
+
+
+        </RelativeLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/month_out_money_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sub_title_text_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="月支出" />
+
+            <TextView
+                android:id="@+id/month_out_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/stress_money_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/month_out_money_desc"
+                tools:text="2000.00" />
+
+
+            <LinearLayout
+                android:id="@+id/month_in_money_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:layout_marginTop="9dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/month_out_money">
+
+
+                <TextView
+                    android:id="@+id/month_in_money_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white_dark"
+                    android:textSize="@dimen/sub_title_text_size"
+                    android:text="月收入" />
+
+                <TextView
+                    android:id="@+id/month_in_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="9dp"
+                    android:textColor="@color/white_dark"
+                    android:textSize="@dimen/sub_title_text_size"
+                    android:text="2000.00" />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/month_divider"
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white_dark"
+                app:layout_constraintBottom_toBottomOf="@+id/month_in_money_layout"
+                app:layout_constraintLeft_toRightOf="@+id/month_in_money_layout"
+                app:layout_constraintRight_toLeftOf="@+id/month_layout"
+                app:layout_constraintTop_toTopOf="@+id/month_in_money_layout" />
+
+            <LinearLayout
+                android:id="@+id/month_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toRightOf="@+id/month_divider"
+                app:layout_constraintTop_toBottomOf="@+id/month_out_money">
+
+
+                <TextView
+                    android:id="@+id/month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white_dark"
+                    android:textSize="@dimen/sub_title_text_size"
+                    tools:text="2019.02" />
+
+                <com.attendance.bk.view.BkImageView
+                    android:id="@+id/toggle"
+                    android:layout_width="10.8dp"
+                    android:layout_height="7.2dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="1dp"
+                    app:bkImageColor="@color/white_dark"
+                    app:showFlags="FLAG_COLOR"
+                    app:srcCompat="@drawable/ic_triangle_down" />
+            </LinearLayout>
+
+
+            <!--<View-->
+            <!--android:id="@+id/center_line"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1.5px"-->
+            <!--android:layout_marginLeft="@dimen/left_right_margin"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginRight="@dimen/left_right_margin"-->
+            <!--android:background="@drawable/bg_virtual_divider"-->
+            <!--android:layerType="software"-->
+            <!--android:visibility="gone"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/total_money_desc" />-->
+
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/total_in_already_layout"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/left_right_margin"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:orientation="vertical"-->
+            <!--android:visibility="gone"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--app:layout_constraintRight_toLeftOf="@+id/total_in_none_layout"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/center_line">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/total_in_already_money"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="12000.00"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/sub_title_text_size" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/total_already_money_desc"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:text="已收账款"-->
+            <!--android:textColor="@color/white_dark"-->
+            <!--android:textSize="@dimen/small_text_size" />-->
+
+            <!--</LinearLayout>-->
+
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/total_in_none_layout"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:visibility="gone"-->
+            <!--app:layout_constraintBottom_toBottomOf="@+id/total_in_already_layout"-->
+            <!--app:layout_constraintLeft_toRightOf="@+id/total_in_already_layout"-->
+            <!--app:layout_constraintRight_toLeftOf="@+id/total_in_before_money_layout"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/total_in_already_layout">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/total_in_none_money"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="1000.00"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/sub_title_text_size"-->
+            <!--app:layout_constraintBaseline_toBaselineOf="@+id/total_out"-->
+            <!--app:layout_constraintLeft_toRightOf="@+id/total_out" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/total_in_none_money_desc"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:text="待收账款"-->
+            <!--android:textColor="@color/white_dark"-->
+            <!--android:textSize="@dimen/small_text_size"-->
+            <!--app:layout_constraintBaseline_toBaselineOf="@+id/total_receipt_repayment_money_desc"-->
+            <!--app:layout_constraintLeft_toRightOf="@+id/total_out" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/total_in_before_money_layout"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:visibility="gone"-->
+            <!--app:layout_constraintBottom_toBottomOf="@+id/total_in_none_layout"-->
+            <!--app:layout_constraintLeft_toRightOf="@+id/total_in_none_layout"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/total_in_none_layout">-->
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/total_in_before_money"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="1200.00"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/sub_title_text_size" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/total_in_before_money_desc"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:text="预收账款"-->
+            <!--android:textColor="@color/white_dark"-->
+            <!--android:textSize="@dimen/small_text_size" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_below="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:background="@color/color_def_bg">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/trade_data_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingLeft="@dimen/left_right_margin"
+            android:paddingTop="@dimen/left_right_margin"
+            android:paddingRight="@dimen/left_right_margin"
+            android:paddingBottom="20dp" />
+
+
+        <ImageView
+            android:id="@+id/take_account"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/bg_btn_round"
+            android:scaleType="center"
+            android:src="@drawable/ic_tianjia_white" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

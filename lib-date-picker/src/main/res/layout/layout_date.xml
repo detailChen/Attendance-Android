@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="225dp"
+    android:background="#ffffff">
+
+    <com.bk.datepicker.date.YearPicker
+        android:id="@+id/yearPicker_layout_date"
+        android:layout_width="83dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/monthPicker_layout_date"
+        app:halfVisibleItemCount="2"
+        app:itemTextColor="#ff999999"
+        app:selectedTextColor="#ff333333"
+        app:wheelCurtainBorder="false"
+        app:wheelCyclic="true"
+        app:itemTextSize="15sp"
+        app:wheelCurtainColor="#ffffff"
+        app:zoomInSelectedItem="false" />
+
+    <FrameLayout
+        android:layout_width="83dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/monthPicker_layout_date">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/datepicker_divider" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/datepicker_divider" />
+
+    </FrameLayout>
+
+    <com.bk.datepicker.date.MonthPicker
+        android:id="@+id/monthPicker_layout_date"
+        android:layout_width="83dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        app:halfVisibleItemCount="2"
+        app:itemTextColor="#ff999999"
+        app:wheelCyclic="true"
+        app:itemTextSize="15sp"
+        app:selectedTextColor="#ff333333"
+        app:wheelCurtainBorder="false"
+        app:wheelCurtainColor="#ffffff"
+        app:zoomInSelectedItem="false" />
+
+    <FrameLayout
+        android:layout_width="83dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/datepicker_divider" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/datepicker_divider" />
+
+    </FrameLayout>
+
+    <com.bk.datepicker.date.DayPicker
+        android:id="@+id/dayPicker_layout_date"
+        android:layout_width="83dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/monthPicker_layout_date"
+        app:halfVisibleItemCount="2"
+        app:itemTextColor="#ff999999"
+        app:wheelCyclic="true"
+        app:itemTextSize="15sp"
+        app:selectedTextColor="#ff333333"
+        app:wheelCurtainBorder="false"
+        app:wheelCurtainColor="#ffffff"
+        app:zoomInSelectedItem="false" />
+
+    <FrameLayout
+        android:layout_width="83dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/monthPicker_layout_date">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/datepicker_divider" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/datepicker_divider" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>
+

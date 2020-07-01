@@ -1,0 +1,27 @@
+[
+  {
+    "pay_type_id": "1",
+    "name": "现金",
+    "icon": "ic_pay_type_xianjin"
+  },
+  {
+    "pay_type_id": "2",
+    "name": "储蓄卡",
+    "icon": "ic_pay_type_paycard"
+  },
+  {
+    "pay_type_id": "2",
+    "name": "储蓄卡",
+    "icon": "ic_pay_type_paycard"
+  },
+  {
+    "pay_type_id": "3",
+    "name": "支付宝",
+    "icon": "ic_pay_type_zhifubao"
+  },
+  {
+    "pay_type_id": "4",
+    "name": "微信支付",
+    "icon": "ic_pay_type_weixin"
+  }
+]

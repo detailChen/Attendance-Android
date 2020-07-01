@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="ClearEditText">
+        <attr name="deleteIconSize" format="dimension" />
+        <attr name="deleteIcon" format="reference" />
+    </declare-styleable>
+
+    <item name="BkImageViewDrawableTag" type="id" />
+    <declare-styleable name="BkImageView">
+        <attr name="showFlags" format="integer">
+            <flag name="FLAG_STROKE" value="2" />
+            <flag name="FLAG_FILL" value="4" />
+            <flag name="FLAG_COLOR" value="8" />
+        </attr>
+        <attr name="bkStrokeColor" format="color" />
+        <attr name="bkFillColor" format="color" />
+        <attr name="bkImageColor" format="color" />
+        <attr name="bkStrokeWidth" format="dimension" />
+        <attr name="bkCornerSize" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PinLockView">
+        <attr name="pinLength" format="integer" />
+        <attr name="keypadTextColor" format="color" />
+        <attr name="keypadTextSize" format="dimension" />
+        <attr name="keypadButtonSize" format="dimension" />
+        <attr name="keypadVerticalSpacing" format="dimension" />
+        <attr name="keypadHorizontalSpacing" format="dimension" />
+        <attr name="keypadButtonBackgroundDrawable" format="integer" />
+        <attr name="keypadDeleteButtonDrawable" format="integer" />
+        <attr name="keypadDeleteButtonSize" format="dimension" />
+        <attr name="keypadShowDeleteButton" format="boolean" />
+        <attr name="keypadDeleteButtonPressedColor" format="color" />
+        <attr name="dotEmptyBackground" format="reference" />
+        <attr name="dotFilledBackground" format="reference" />
+        <attr name="dotDiameter" format="dimension" />
+        <attr name="dotSpacing" format="dimension" />
+        <attr name="indicatorType" format="enum">
+            <enum name="fixed" value="0" />
+            <enum name="fill" value="1" />
+            <enum name="fillWithAnimation" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PieView">
+        <attr name="pvTextSize" format="dimension"/>
+        <attr name="pvTextColor" format="color"/>
+        <attr name="pvChartPercent" format="float"/>
+        <attr name="pvChartStrokePercent" format="float"/>
+        <attr name="pvChartLineBreakPercent" format="float"/>
+        <attr name="pvChartProgress" format="float"/>
+        <attr name="pvChartTextLineLength" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeRevealLayout">
+        <attr name="dragEdge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+
+        <attr name="mode">
+            <enum name="normal" value="0" />
+            <enum name="same_level"   value="1" />
+        </attr>
+
+        <attr name="flingVelocity" format="integer" />
+
+        <attr name="minDistRequestDisallowParent" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CodeView">
+        <attr name="codeNumber" format="integer"/>
+        <attr name="codeSpace" format="dimension"/>
+        <attr name="lengthSide" format="dimension"/>
+        <attr name="codeTextSize" format="integer"/>
+        <attr name="codeTextColor" format="color"/>
+        <attr name="inputType" format="integer"/>
+    </declare-styleable>
+
+
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/left_right_margin"
+    android:paddingRight="@dimen/left_right_margin">
+
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="2019-01-04"
+        android:textSize="@dimen/sub_title_text_size"
+        android:textColor="@color/text_second" />
+
+
+    <TextView
+        android:id="@+id/day_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|right"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="10000.00"
+        android:textSize="@dimen/sub_title_text_size"
+        android:textColor="@color/text_second" />
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/date"
+        android:background="@color/divider" />
+
+</RelativeLayout>
+
+

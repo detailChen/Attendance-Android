@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:paddingLeft="@dimen/left_right_margin"
+    android:paddingRight="@dimen/left_right_margin">
+
+    <com.boss.bk.view.BkImageView
+        android:id="@+id/account_icon"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/bank_ccb" />
+
+
+    <TextView
+        android:id="@+id/account_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/vertical_item_margin"
+        android:layout_weight="1"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/sub_title_text_size"
+        tools:text="现金" />
+
+    <com.boss.bk.view.BkImageView
+        android:id="@+id/account_sel"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@drawable/ic_ok" />
+
+</LinearLayout>
