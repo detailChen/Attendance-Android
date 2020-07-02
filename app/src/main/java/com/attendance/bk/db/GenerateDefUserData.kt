@@ -12,7 +12,6 @@ import com.fasterxml.jackson.core.type.TypeReference
 import io.reactivex.Single
 import java.io.IOException
 import java.io.InputStream
-import java.util.*
 import java.util.concurrent.atomic.AtomicBoolean
 
 
@@ -32,7 +31,7 @@ object GenerateDefUserData {
                 try {
                     val userId = addDefUser(currTime)
                     addDefBook(userId, currTime, version)
-                    addDefBillType(userId, currTime, version)
+                    addDefAccount(userId, currTime, version)
                     res.set(true)
                 } catch (e: Exception) {
                     res.set(false)
@@ -83,7 +82,7 @@ object GenerateDefUserData {
      */
     private fun addDefBook(userId: String, time: String, version: Long) {
         val book = Book(
-            bookId = UUID.randomUUID().toString(),
+            bookId = UUIDUtil.uuid(),
             name = "默认账本",
             cover = CoverUtil.randomBookCover,
             orderNum = 1,
@@ -95,11 +94,17 @@ object GenerateDefUserData {
             operatorType = BkDb.TYPE_ADD
         )
         BkDb.instance.bookDao().insert(book)
+        addDefBillType(userId, book.bookId, time, version)
         addDefUserExtra(userId, book.bookId)//设置UserExtra
     }
 
 
-    private fun addDefBillType(userId: String, updateTime: String, version: Long): Int {
+    private fun addDefBillType(
+        userId: String,
+        bookId: String,
+        updateTime: String,
+        version: Long
+    ): Int {
         val count = 0
         val btOutIs: InputStream? = BkApp.appContext.resources.openRawResource(R.raw.def_bt_out)
         val btInIs: InputStream? = BkApp.appContext.resources.openRawResource(R.raw.def_bt_in)
@@ -111,13 +116,13 @@ object GenerateDefUserData {
             val btOutList = BkApp.bkJackson.readValue<List<BillType>>(
                 btOutIs, object : TypeReference<List<BillType>>() {})
             for ((order, billType) in btOutList.withIndex()) {
-                val bt = newBillType(billType, userId, version, order, updateTime)
+                val bt = newBillType(billType, userId, bookId, version, order, updateTime)
                 BkDb.instance.billTypeDao().insert(bt)
             }
             val btInList = BkApp.bkJackson.readValue<List<BillType>>(
                 btInIs, object : TypeReference<List<BillType>>() {})
             for ((order, billType) in btInList.withIndex()) {
-                val bt = newBillType(billType, userId, version, order, updateTime)
+                val bt = newBillType(billType, userId, bookId, version, order, updateTime)
                 BkDb.instance.billTypeDao().insert(bt)
             }
 
@@ -129,13 +134,14 @@ object GenerateDefUserData {
 
 
     private fun newBillType(
-        billType: BillType, userId: String, version: Long, order: Int, time: String
+        billType: BillType, userId: String, bookId: String, version: Long, order: Int, time: String
     ): BillType {
         return BillType(
-            billId = UUID.randomUUID().toString(),
+            billId = UUIDUtil.uuid(),
             name = billType.name,
-            icon = billType.icon,
-            color = billType.color,
+            bookId = bookId,
+            clickIcon = billType.clickIcon,
+            normalIcon = billType.normalIcon,
             orderNum = order,
             userId = userId,
             addTime = time,
@@ -145,11 +151,13 @@ object GenerateDefUserData {
         )
     }
 
-    private fun addDefAccount(groupId: String, userId: String, currTime: String, version: Long) {
+    private fun addDefAccount(userId: String, currTime: String, version: Long) {
         val accountIs = BkApp.appContext.resources.openRawResource(R.raw.account_def)
-        val accountList: List<Account> = BkApp.bkJackson.readValue(accountIs, object : TypeReference<List<Account>>() {
-        })
+        val accountList: List<Account> =
+            BkApp.bkJackson.readValue(accountIs, object : TypeReference<List<Account>>() {
+            })
         for (account in accountList) {
+            account.accountId = UUIDUtil.uuid()
             account.userId = userId
             account.addTime = currTime
             account.updateTime = currTime

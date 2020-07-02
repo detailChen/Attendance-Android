@@ -6,6 +6,7 @@ import android.graphics.Color
 import android.graphics.Rect
 import android.graphics.drawable.ColorDrawable
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -19,12 +20,8 @@ import com.attendance.bk.dialog.MonthPickerDialog
 import com.attendance.bk.page.LazyPagerFragment
 import com.attendance.bk.page.TakeAccountActivity
 import com.attendance.bk.showToast
-import com.attendance.bk.utils.DateUtil
-import com.attendance.bk.utils.workerThreadChange
-import com.blankj.utilcode.util.BarUtils
-import com.blankj.utilcode.util.ConvertUtils
-import com.blankj.utilcode.util.LogUtils
-import com.blankj.utilcode.util.ToastUtils
+import com.attendance.bk.utils.*
+import com.blankj.utilcode.util.*
 import kotlinx.android.synthetic.main.fragment_bill.view.*
 import java.util.*
 
@@ -36,7 +33,8 @@ class BillFragment : LazyPagerFragment(), View.OnClickListener {
     private var mBook: Book? = null
     private var mCurrMonth: Date? = null//当前选中的月份,日期为1,如果是某一年全部的则日期为yyyy-12-31
     private var mAdapter: TradeListAdapter? = null
-
+    private var mBookCover: ImageView? = null
+    private var mBookCoverMask: ImageView? = null
     private var mMonthPickerDialog: MonthPickerDialog? = null
     private var mDateItemDivider: RecyclerView.ItemDecoration? = null
 
@@ -50,8 +48,14 @@ class BillFragment : LazyPagerFragment(), View.OnClickListener {
 
     override fun lazyData() {
         loadCurrBook()
-        loadMonthMoney()
-        loadTradeData()
+        initBookData()
+        if (mCurrMonth == null) {
+            val cal = DateUtil.dayZeroTimeCal
+            cal.set(Calendar.DAY_OF_MONTH, 1)
+            mCurrMonth = cal.time
+            mMonth!!.text = DateUtil.formatDate(mCurrMonth!!, "yyyy.MM")
+        }
+        loadData()
     }
 
 
@@ -66,8 +70,17 @@ class BillFragment : LazyPagerFragment(), View.OnClickListener {
         })
     }
 
+    @SuppressLint("AutoDispose", "CheckResult")
     private fun loadMonthMoney() {
-
+        BkDb.instance.tradeDao().getYearMonthTradeTotalMoney(BkApp.currUserId(), mBook!!.bookId,
+            mCurrMonth!!).workerThreadChange()
+            .subscribe({ pairMoney ->
+                mMonthInMoney!!.text = BkUtil.formatMoneyWithTS(pairMoney.first)
+                mMonthOutMoney!!.text = BkUtil.formatMoneyWithTS(-pairMoney.second)
+            }, { throwable ->
+                ToastUtils.showShort("读取失败")
+                LogUtils.e("loadTotalMoneyData failed->", throwable)
+            })
     }
 
 
@@ -79,6 +92,8 @@ class BillFragment : LazyPagerFragment(), View.OnClickListener {
         toolbar.setPadding(0, BarUtils.getStatusBarHeight(), 0, 0)
 
         mBookName = rootView.book_name
+        mBookCover = rootView.findViewById(R.id.cover)
+        mBookCoverMask = rootView.findViewById(R.id.cover_mask)
         mMonthOutMoney = rootView.month_out_money
         mMonthInMoney = rootView.month_in_money
         mMonth = rootView.month
@@ -97,6 +112,22 @@ class BillFragment : LazyPagerFragment(), View.OnClickListener {
         rootView.month_layout.setOnClickListener(this)
         rootView.take_account.setOnClickListener(this)
     }
+
+
+
+    private fun loadData() {
+        loadMonthMoney()
+        loadTradeData()
+    }
+
+    private fun initBookData() {
+        BkApp.mainHandler.postDelayed({
+            BkUtil.updateImgHeight(mBookCover!!)
+            mBookCover!!.setImageDrawable(DrawableUtil.getDrawableByName(mBook!!.cover))
+            mBookCoverMask?.visibility = View.VISIBLE
+        }, 10)
+    }
+
 
     override fun onClick(v: View) {
         when (v.id) {

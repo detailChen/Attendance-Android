@@ -7,7 +7,9 @@ package com.attendance.bk.bus
 import androidx.annotation.IntDef
 import com.attendance.bk.bean.WXLoginResult
 import com.attendance.bk.db.BkDb
+import com.attendance.bk.db.table.Account
 import com.attendance.bk.db.table.BillType
+import com.attendance.bk.db.table.Book
 import com.attendance.bk.db.table.Trade
 
 /**
@@ -28,3 +30,8 @@ data class RequestWXInfoSuccessEvent(val wxLoginResult: WXLoginResult)
 data class BillTypeEvent(val billType: BillType?, @BkDb.OPType val type: Int)
 
 data class TradeEvent(val trade: Trade?, @BkDb.OPType val type: Int)
+
+data class BookSelEvent(val book: Book)
+
+data class AccountEvent(val account: Account, @BkDb.OPType val type: Int)
+

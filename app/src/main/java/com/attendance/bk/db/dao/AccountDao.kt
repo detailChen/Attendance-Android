@@ -139,7 +139,7 @@ abstract class AccountDao {
 
     @Query(
         """SELECT t.trade_id,t.date,t.money,t.book_id,t.trade_type,t.type,t.type_id,t.user_id,t.add_time,t.update_time,
-                  bt.bill_id,bt.name,bt.icon,bt.color,t.memo,a.account_id ,a.name as account_name 
+                  bt.bill_id,bt.name,bt.click_icon as icon,t.memo,a.account_id ,a.name as account_name 
             FROM tb_trade AS t  
             LEFT JOIN tb_bill_type AS bt ON t.user_id = bt.user_id AND t.bill_id = bt.bill_id  
             LEFT JOIN tb_account as a ON t.account_id = a.account_id AND t.user_id = a.user_id

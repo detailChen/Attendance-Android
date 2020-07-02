@@ -54,8 +54,9 @@ const val TRADE_ACCOUNT_DIFF_MONEY = "10"//账户修改余额产生的变更流�
 /**
  * 收支类型
  */
-const val BILL_TYPE_IN = 0//收入
-const val BILL_TYPE_OUT = 1//支出
+const val BILL_TYPE_OUT = 0//支出
+const val BILL_TYPE_IN = 1//收入
+
 /**
  * 交易状态
  */

@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name" translatable="false">考勤记账</string>
+    <string name="app_name" translatable="false">天天考勤</string>
 
     <string name="main_tab_book" translatable="false">账本</string>
     <string name="main_tab_account" translatable="false">账户</string>

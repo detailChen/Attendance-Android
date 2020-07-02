@@ -2,8 +2,10 @@ package com.attendance.bk.http
 
 import com.attendance.bk.bean.LoginResult
 import com.attendance.bk.bean.net.TradeData
+import com.attendance.bk.db.table.Account
 import com.attendance.bk.db.table.BillType
 import com.attendance.bk.db.table.Trade
+import com.attendance.bk.db.table.UserExtra
 import io.reactivex.Single
 import okhttp3.ResponseBody
 import retrofit2.Call
@@ -81,4 +83,17 @@ interface ApiService {
 
     @POST("/billType/deleteBillType")
     fun deleteBillType(@Body billType: BillType): Single<ApiResult<BillType>>
+
+
+    @POST("userExtra/updateUserExtra")
+    fun updateUserExtra(@Body userExtra: UserExtra): Single<ApiResult<UserExtra>>
+
+    @POST("/account/addAccount")
+    fun addAccount(@Body account: Account): Single<ApiResult<Account>>
+
+    @POST("/account/modifyAccount")
+    fun modifyAccount(@Body account: Account): Single<ApiResult<Account>>
+
+    @POST("/account/deleteAccount")
+    fun deleteAccount(@Body account: Account): Single<ApiResult<Account>>
 }

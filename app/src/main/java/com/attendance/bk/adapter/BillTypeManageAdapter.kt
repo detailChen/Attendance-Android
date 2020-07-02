@@ -30,7 +30,7 @@ class BillTypeManageAdapter(layoutResId: Int) :
     override fun convert(helper: BaseViewHolder, item: BillType) {
         //绑定
         binderHelper.bind(helper.getView(R.id.swipe_layout), item.billId)
-        helper.setImageDrawable(R.id.bt_icon, DrawableUtil.getDrawableByName(item.icon))
+        helper.setImageDrawable(R.id.bt_icon, DrawableUtil.getDrawableByName(item.clickIcon))
         helper.setText(R.id.bt_name, item.name)
         helper.getView<TextView>(R.id.tv_delete).setOnClickListener {
             deleteBillType(item, helper.adapterPosition)

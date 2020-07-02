@@ -9,7 +9,7 @@ import com.bk.datepicker.date.DatePicker
 
 /**
  * 时间选择器，弹出框
- * Created by ycuwq on 2018/1/6.
+ *
  */
 class DatePickerDialog : DialogFragment() {
 

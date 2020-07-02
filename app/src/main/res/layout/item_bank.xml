@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/vertical_item_height"
+    xmlns:caiyi="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_view_click"
+    android:orientation="vertical">
+
+    <com.attendance.bk.view.BkImageView
+        android:id="@+id/iv_bank_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        caiyi:srcCompat="@drawable/bank_ccb"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sub_title_text_size"
+        android:textColor="@color/text_primary"
+        android:layout_toRightOf="@id/iv_bank_icon"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true" />
+
+    <com.attendance.bk.view.BkImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/left_right_margin"
+        caiyi:bkImageColor="@color/text_second"
+        caiyi:showFlags="FLAG_COLOR"
+        caiyi:srcCompat="@drawable/ic_arrow_right"/>
+
+</RelativeLayout>

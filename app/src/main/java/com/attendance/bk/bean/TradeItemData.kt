@@ -53,9 +53,6 @@ data class TradeItemData(
     @ColumnInfo(name = "icon")
     var icon: String? = null,
 
-    @ColumnInfo(name = "color")
-    var color: String? = null,
-
     @ColumnInfo(name = "account_id")
     var accountId: String? = null,
 
@@ -70,7 +67,6 @@ data class TradeItemData(
         parcel.readString(),
         parcel.readInt(),
         parcel.readInt(),
-        parcel.readString(),
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
@@ -99,7 +95,6 @@ data class TradeItemData(
         parcel.writeString(billId)
         parcel.writeString(name)
         parcel.writeString(icon)
-        parcel.writeString(color)
         parcel.writeString(accountId)
         parcel.writeString(accountName)
     }

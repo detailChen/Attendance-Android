@@ -17,6 +17,13 @@
             android:scaleType="fitXY"
             tools:src="@drawable/bg_bill_top" />
 
+        <ImageView
+            android:id="@+id/cover_mask"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            android:src="@drawable/bg_image_mask" />
 
     </FrameLayout>
 
@@ -97,7 +104,7 @@
                 android:textSize="@dimen/sub_title_text_size"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:text="月支出" />
+                android:text="支出" />
 
             <TextView
                 android:id="@+id/month_out_money"
@@ -131,7 +138,7 @@
                     android:gravity="center_vertical"
                     android:textColor="@color/white_dark"
                     android:textSize="@dimen/sub_title_text_size"
-                    android:text="月收入" />
+                    android:text="收入" />
 
                 <TextView
                     android:id="@+id/month_in_money"

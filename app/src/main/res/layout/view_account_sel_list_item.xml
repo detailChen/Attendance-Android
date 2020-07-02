@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/left_right_margin"
     android:paddingRight="@dimen/left_right_margin">
 
-    <com.boss.bk.view.BkImageView
+    <com.attendance.bk.view.BkImageView
         android:id="@+id/account_icon"
         android:layout_width="22dp"
         android:layout_height="22dp"
@@ -27,7 +27,7 @@
         android:textSize="@dimen/sub_title_text_size"
         tools:text="现金" />
 
-    <com.boss.bk.view.BkImageView
+    <com.attendance.bk.view.BkImageView
         android:id="@+id/account_sel"
         android:layout_width="16dp"
         android:layout_height="16dp"

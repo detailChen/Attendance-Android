@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/account_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_item_height"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/left_right_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="类型"
+                    android:drawableRight="@drawable/ic_bixuan"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/sub_title_text_size" />
+
+                <com.attendance.bk.view.BkImageView
+                    android:id="@+id/account_type_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@id/account_type_name"
+                    tools:srcCompat="@drawable/account_cxk" />
+
+                <TextView
+                    android:id="@+id/account_type_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="9dp"
+                    android:gravity="right"
+                    android:hint="请选择"
+                    android:textColorHint="@color/text_second"
+                    android:layout_toLeftOf="@+id/ic_account_type"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/sub_title_text_size" />
+
+                <ImageView
+                    android:id="@+id/ic_account_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/left_right_margin"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_item_height"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="名称"
+                    android:drawableRight="@drawable/ic_bixuan"
+                    android:layout_marginLeft="@dimen/left_right_margin"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/sub_title_text_size" />
+
+                <com.attendance.bk.view.ClearEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/transparent"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入"
+                    android:layout_marginRight="@dimen/left_right_margin"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_second"
+                    android:textSize="@dimen/sub_title_text_size"
+                    app:deleteIcon="@drawable/ic_delete"
+                    app:deleteIconSize="16dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/left_right_margin"
+                    android:visibility="visible"
+                    android:background="@color/divider" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bill_day_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_item_height"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:background="@drawable/bg_view_click"
+                android:layout_marginTop="9dp"
+                android:paddingLeft="@dimen/left_right_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="账单日"
+                    android:drawableRight="@drawable/ic_bixuan"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/sub_title_text_size" />
+
+
+                <TextView
+                    android:id="@+id/bill_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="9dp"
+                    android:gravity="right"
+                    android:hint="请选择"
+                    android:textColorHint="@color/text_second"
+                    android:layout_toLeftOf="@+id/ic_bill_day"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/sub_title_text_size" />
+
+                <ImageView
+                    android:id="@+id/ic_bill_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/left_right_margin"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_item_height"
+                android:layout_marginTop="9dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/left_right_margin"
+                android:paddingRight="@dimen/left_right_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="备注"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/sub_title_text_size" />
+
+                <com.attendance.bk.view.ClearEditText
+                    android:id="@+id/memo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/transparent"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_second"
+                    android:textSize="@dimen/sub_title_text_size"
+                    app:deleteIcon="@drawable/ic_delete"
+                    app:deleteIconSize="16dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="@dimen/left_right_margin"
+                android:layout_marginTop="@dimen/button_top_margin"
+                android:layout_marginRight="@dimen/left_right_margin"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/bg_btn_click"
+                android:gravity="center"
+                android:text="@string/save"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_text_size" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

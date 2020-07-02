@@ -43,7 +43,7 @@
                     android:gravity="center"
                     tools:text="日常账本"
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/title_text_size" />
 
                 <com.attendance.bk.view.BkImageView
                     android:id="@+id/ic_book"
@@ -136,182 +136,179 @@
         </LinearLayout>
 
 
-        <RelativeLayout
-            android:id="@+id/trade_time_layout"
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/vertical_item_height"
-            android:layout_marginTop="9dp"
-            android:background="@drawable/bg_view_click">
+            android:fitsSystemWindows="true"
+            android:fillViewport="true"
+            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/trade_time_desc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/left_right_margin"
-                android:text="时间"
-                android:textColor="@color/text_primary"
-                android:textSize="@dimen/sub_title_text_size" />
-
-            <TextView
-                android:id="@+id/trade_time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="9dp"
-                android:layout_toLeftOf="@+id/ic_trade_time"
-                android:hint="请选择"
-                android:textColor="@color/text_primary"
-                android:textSize="@dimen/sub_title_text_size" />
-
-            <ImageView
-                android:id="@+id/ic_trade_time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/left_right_margin"
-                app:srcCompat="@drawable/ic_arrow_right" />
-
-
-
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/pay_type_layout"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/vertical_item_height"
-            android:background="@drawable/bg_view_click"
-            android:paddingRight="@dimen/left_right_margin">
-
-            <TextView
-                android:id="@+id/pay_type_desc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:text="支付方式"
-                android:layout_marginLeft="@dimen/left_right_margin"
-                android:textColor="@color/text_primary"
-                android:textSize="@dimen/sub_title_text_size" />
-
-            <TextView
-                android:id="@+id/pay_type"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="9dp"
-                android:layout_toLeftOf="@+id/ic_pay_type"
-                android:gravity="right|center_vertical"
-                android:hint="请选择"
-                android:textColor="@color/text_primary"
-                android:textSize="@dimen/sub_title_text_size" />
-
-            <ImageView
-                android:id="@+id/ic_pay_type"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                app:srcCompat="@drawable/ic_arrow_right" />
-
-            <View
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:layout_marginLeft="@dimen/left_right_margin"
-                android:background="@color/divider"
-                android:orientation="vertical" />
+                android:orientation="vertical"
+                android:layout_height="match_parent">
 
-        </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/trade_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vertical_item_height"
+                    android:background="@drawable/bg_view_click">
 
+                    <TextView
+                        android:id="@+id/trade_time_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_right_margin"
+                        android:text="时间"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/sub_title_text_size" />
 
-        <RelativeLayout
-            android:id="@+id/person_layout"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/vertical_item_height"
-            android:layout_marginTop="9dp"
-            android:visibility="gone"
-            android:background="@drawable/bg_view_click"
-            android:paddingLeft="@dimen/left_right_margin"
-            android:paddingRight="@dimen/left_right_margin">
+                    <TextView
+                        android:id="@+id/trade_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="9dp"
+                        android:layout_toLeftOf="@+id/ic_trade_time"
+                        android:hint="请选择"
+                        android:textColorHint="@color/text_second"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/sub_title_text_size" />
 
-            <TextView
-                android:id="@+id/person_desc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:text="交易方"
-                android:textColor="@color/text_primary"
-                android:textSize="@dimen/sub_title_text_size" />
-
-            <TextView
-                android:id="@+id/person"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="9dp"
-                android:layout_toLeftOf="@+id/ic_person"
-                android:gravity="right|center_vertical"
-                android:hint="请选择"
-                android:textColor="@color/text_primary"
-                android:textSize="@dimen/sub_title_text_size" />
-
-            <ImageView
-                android:id="@+id/ic_person"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                app:srcCompat="@drawable/ic_arrow_right" />
-
-        </RelativeLayout>
-
-
-        <LinearLayout
-            android:id="@+id/add_memo_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="@dimen/left_right_margin"
-            android:paddingTop="@dimen/vertical_item_margin"
-            android:paddingRight="@dimen/left_right_margin"
-            android:paddingBottom="@dimen/vertical_item_margin">
-
-            <com.attendance.bk.view.BkImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:scaleType="fitCenter"
-                app:bkImageColor="@color/text_second"
-                app:showFlags="FLAG_COLOR"
-                app:srcCompat="@drawable/ic_memo" />
-
-            <com.attendance.bk.view.ClearEditText
-                android:id="@+id/memo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:background="@color/transparent"
-                android:drawablePadding="10dp"
-                android:gravity="center_vertical"
-                android:hint="输入备注"
-                android:inputType="numberSigned|numberDecimal"
-                android:textColor="@color/text_primary"
-                android:textColorHint="@color/text_second"
-                android:textSize="@dimen/sub_title_text_size" />
-
-        </LinearLayout>
+                    <ImageView
+                        android:id="@+id/ic_trade_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/left_right_margin"
+                        app:srcCompat="@drawable/ic_arrow_right" />
 
 
 
-        <TextView
-            android:id="@+id/blank_area"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal|bottom"
-            android:paddingBottom="@dimen/vertical_item_margin"
-            android:text="向上滑动可弹出数字键盘哦！"
-            android:textColor="#99999999"
-            android:textSize="@dimen/small_text_size" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/pay_type_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vertical_item_height"
+                    android:background="@drawable/bg_view_click"
+                    android:paddingRight="@dimen/left_right_margin">
+
+                    <TextView
+                        android:id="@+id/pay_type_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="支付方式"
+                        android:layout_marginLeft="@dimen/left_right_margin"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/sub_title_text_size" />
+
+                    <TextView
+                        android:id="@+id/pay_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="9dp"
+                        android:layout_toLeftOf="@+id/ic_pay_type"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择"
+                        android:textColorHint="@color/text_second"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/sub_title_text_size" />
+
+                    <ImageView
+                        android:id="@+id/ic_pay_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_right" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/left_right_margin"
+                        android:background="@color/divider"
+                        android:orientation="vertical" />
+
+                </RelativeLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/add_memo_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/vertical_item_height"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/left_right_margin"
+                        android:paddingRight="@dimen/left_right_margin">
+
+                        <com.attendance.bk.view.BkImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:scaleType="fitCenter"
+                            android:layout_marginTop="16dp"
+                            app:bkImageColor="@color/text_second"
+                            app:showFlags="FLAG_COLOR"
+                            app:srcCompat="@drawable/ic_memo" />
+
+                        <com.attendance.bk.view.ClearEditText
+                            android:id="@+id/memo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@null"
+                            android:hint="请输入备注"
+                            android:textColor="@color/text_second"
+                            android:textSize="@dimen/memo_text_size" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/memo_click"
+                        android:visibility="visible"
+                        android:background="@color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxHeight="75dp"
+                        android:minHeight="@dimen/vertical_item_height"/>
+                </FrameLayout>
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/img_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:visibility="gone"
+                    android:paddingLeft="@dimen/left_right_margin"
+                    android:paddingRight="@dimen/left_right_margin" />
+
+
+                <!--        <TextView-->
+                <!--            android:id="@+id/blank_area"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="match_parent"-->
+                <!--            android:gravity="center_horizontal|bottom"-->
+                <!--            android:paddingBottom="@dimen/vertical_item_margin"-->
+                <!--            android:text="向上滑动可弹出数字键盘哦！"-->
+                <!--            android:textColor="#99999999"-->
+                <!--            android:textSize="@dimen/small_text_size" />-->
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
 
 
     </LinearLayout>

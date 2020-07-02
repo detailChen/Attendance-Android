@@ -36,6 +36,9 @@ data class Account(
     @ColumnInfo(name = "account_type_name")
     var accountTypeName: String = "",
 
+    @ColumnInfo(name = "bill_day")
+    var billDay: Int = 1,
+
     @ColumnInfo(name = "order_num")
     var orderNum: Int = 0,
 
@@ -69,6 +72,7 @@ data class Account(
         parcel.readString(),
         parcel.readInt(),
         parcel.readInt(),
+        parcel.readInt(),
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
@@ -84,6 +88,7 @@ data class Account(
         parcel.writeString(accountTypeId)
         parcel.writeString(accountTypeIcon)
         parcel.writeString(accountTypeName)
+        parcel.writeInt(billDay)
         parcel.writeInt(orderNum)
         parcel.writeInt(type)
         parcel.writeString(userId)

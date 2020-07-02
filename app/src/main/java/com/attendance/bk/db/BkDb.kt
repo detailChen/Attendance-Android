@@ -68,7 +68,7 @@ abstract class BkDb : RoomDatabase() {
         const val TYPE_MODIFY = 1
         const val TYPE_DELETE = 2
 
-        const val DB_VERSION = 3//当前数据库版本
+        const val DB_VERSION = 1//当前数据库版本
 
 
         private var INSTANCE: BkDb? = null

@@ -122,6 +122,12 @@ public class DayPicker extends WheelPicker<Integer>{
         setDataList(list);
     }
 
+
+    public void setMaxDay(int maxDay){
+        mMaxDay = maxDay;
+        updateDay();
+    }
+
     public interface OnDaySelectedListener {
     	void onDaySelected(int day);
     }

@@ -35,13 +35,12 @@
             android:textColor="@color/text_primary"
             android:textSize="@dimen/sub_title_text_size" />
 
-        <com.boss.bk.view.BkImageView
+        <com.attendance.bk.view.BkImageView
             android:id="@+id/add_account"
             android:layout_width="@dimen/vertical_item_height"
             android:layout_height="match_parent"
             android:layout_gravity="right"
             android:padding="13dp"
-            android:visibility="gone"
             app:bkImageColor="@color/text_primary"
             app:showFlags="FLAG_COLOR"
             app:srcCompat="@drawable/ic_tianjia" />

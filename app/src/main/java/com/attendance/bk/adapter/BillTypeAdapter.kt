@@ -29,7 +29,7 @@ class BillTypeAdapter : BaseMultiItemQuickAdapter<BTItem, BaseViewHolder>(null) 
         } else {
             holder.getView<TextView>(R.id.bt_name).visibility = View.GONE
             val btIcon = holder.getView<BkImageView>(R.id.bt_icon)
-            if (mSelectIcon?.clickIcon == item.groupIcon.clickIcon &&
+            if (mSelectIcon?.clickIcon == item.groupIcon!!.clickIcon &&
                 mSelectIcon?.normalIcon == item.groupIcon.normalIcon
             ) {
                 btIcon.removeFill()

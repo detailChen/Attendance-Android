@@ -163,10 +163,10 @@ class BillTypeListAdapter(recyclerView: RecyclerView) : DragSortAdapter<BillType
             val bt = mData[position]
             holder.btName.text = bt.name
             if (mSelPos == position) {
-                holder.btIcon.setImageState(BkImageView.State().name(bt.icon).fillColor("#e3e3e3"))
-            } else {
                 holder.btIcon.removeFill()
-                holder.btIcon.setImageName(bt.icon)
+                holder.btIcon.setImageState(BkImageView.State().name(bt.clickIcon))
+            } else {
+                holder.btIcon.setImageState(BkImageView.State().name(bt.normalIcon).fillColor("#e3e3e3"))
             }
 //            holder.btDelete.visibility = if (mMode == MODE_EDIT) View.VISIBLE else View.INVISIBLE
         } else {

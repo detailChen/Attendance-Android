@@ -110,7 +110,7 @@ abstract class TradeDao {
 
     @Query(
         """SELECT t.trade_id,t.date,t.money,t.book_id,t.trade_type,t.type,t.type_id,t.user_id,t.add_time,t.update_time,
-                  bt.bill_id,bt.name,bt.icon,bt.color,t.memo,a.account_id ,a.name as account_name 
+                  bt.bill_id,bt.name,bt.click_icon as icon,t.memo,a.account_id ,a.name as account_name 
             FROM tb_trade AS t  
             LEFT JOIN tb_bill_type AS bt ON t.user_id = bt.user_id AND t.bill_id = bt.bill_id  
             LEFT JOIN tb_account as a ON t.account_id = a.account_id AND t.user_id = a.user_id
@@ -144,7 +144,7 @@ abstract class TradeDao {
         userId: String,
         bookId: String,
         yearMonth: Date
-    ): Single<Double> {
+    ): Single<Pair<Double,Double>> {
         return Single.create { emitter ->
             val cal = DateUtil.dayZeroTimeCal
             cal.time = yearMonth
@@ -168,19 +168,22 @@ abstract class TradeDao {
             }
 
             val monthOutInMoneyList = getMonthTradeMoney(userId,bookId,sStart,sEnd)
+            var monthInMoney = 0.0
+            var monthOutMoney = 0.0
             monthOutInMoneyList.forEach {
 
                 if (it.tradeType == TRADE_TYPE_IN){
-
+                    monthInMoney = it.money
+                } else {
+                    monthOutMoney = it.money
                 }
             }
-//            val monthOutInMoney = Pair<Double,Double>()
-
+            emitter.onSuccess(Pair(monthInMoney,monthOutMoney))
         }
     }
 
     @Query(
-        """select TOTAL(t.money),t.trade_type
+        """select TOTAL(t.money) as money,t.trade_type
              FROM tb_trade t
              WHERE t.user_id =:userId
              AND t.book_id =:bookId

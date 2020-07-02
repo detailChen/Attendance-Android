@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/type_out_money_layout"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/book_type"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        tools:text="默认账本"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/sub_title_text_size"
+        android:layout_marginLeft="@dimen/left_right_margin"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ic_book_sel"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/left_right_margin"
+        android:clickable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_ok"
+        android:visibility="visible" />
+</LinearLayout>

@@ -13,6 +13,7 @@ import com.attendance.bk.BkApp
 import com.attendance.bk.R
 import com.attendance.bk.db.BkDb
 import com.attendance.bk.db.table.Account
+import com.attendance.bk.page.account.AccountActivity
 import com.attendance.bk.utils.DrawableUtil
 import com.attendance.bk.utils.workerThreadChange
 import com.attendance.bk.view.RvDivider
@@ -78,6 +79,10 @@ class AccountSelDialog : DialogFragment() {
         }
         loadAccountTypeData(selAccountId)
         view.findViewById<View>(R.id.cancel).setOnClickListener { dismiss() }
+        view.findViewById<View>(R.id.add_account).setOnClickListener {
+            startActivity(AccountActivity.startAddIntent())
+            dismiss()
+        }
 
         return view
     }

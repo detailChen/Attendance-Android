@@ -94,8 +94,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
         tab_bill_layout.setOnClickListener(this)
         tab_form_layout.setOnClickListener(this)
         tab_mine_layout.setOnClickListener(this)
-        book_layout.setOnClickListener(this)
-        add_book.setOnClickListener(this)
+//        book_layout.setOnClickListener(this)
         add_book.setOnClickListener(this)
     }
 

@@ -1,8 +1,7 @@
 package com.attendance.bk.bean.net
 
 import com.attendance.bk.db.table.Trade
-import com.boss.bk.db.table.Image
-import com.boss.bk.db.table.Trade
+
 
 
 /**

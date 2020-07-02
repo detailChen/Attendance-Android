@@ -36,14 +36,14 @@
                 android:orientation="horizontal">
 
 
-                <com.boss.bk.view.BkImageView
+                <com.attendance.bk.view.BkImageView
                     android:id="@+id/icon"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginRight="9dp"
                     android:scaleType="centerInside"
                     android:visibility="visible"
-                    app:srcCompat="@drawable/bt_moren_22" />
+                    app:srcCompat="@drawable/ic_category_book_click" />
 
                 <TextView
                     android:id="@+id/name"
@@ -56,51 +56,7 @@
                     tools:text="餐饮" />
 
 
-                <RelativeLayout
-                    android:id="@+id/trade_label_layout"
-                    android:layout_width="wrap_content"
-                    android:visibility="gone"
-                    tools:visibility="visible"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
 
-                    <View
-                        android:id="@+id/center_line"
-                        android:layout_width="1px"
-                        android:layout_height="10dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="9dp"
-                        android:background="@color/divider" />
-
-                    <TextView
-                        android:id="@+id/trade_label"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="9dp"
-                        android:layout_toRightOf="@+id/center_line"
-                        android:gravity="center"
-                        android:paddingLeft="5dp"
-                        android:paddingTop="2dp"
-                        android:paddingRight="5dp"
-                        android:paddingBottom="2dp"
-                        android:text="应收款"
-                        android:textColor="@color/text_second"
-                        android:textSize="@dimen/memo_text_size" />
-
-                    <TextView
-                        android:id="@+id/trade_status"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_toRightOf="@+id/trade_label"
-                        android:paddingLeft="2dp"
-                        android:paddingRight="2dp"
-                        android:text="已结清"
-                        android:background="@drawable/bg_stroke_corner"
-                        android:textColor="@color/text_third"
-                        android:textSize="8sp" />
-
-                </RelativeLayout>
 
 
             </LinearLayout>
@@ -135,14 +91,6 @@
 
     </RelativeLayout>
 
-    <com.boss.bk.view.ImageLayout
-        android:id="@+id/image_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="9dp"
-        tools:layout_height="60dp"
-        tools:layout_width="240dp" />
 
 
 </LinearLayout>
